@@ -3,7 +3,7 @@
 **Projeto:** Sistema de Gestão de Funcionários  
 **Tipo de documento:** Plano de Testes  
 **Versão:** 1.0  
-**Responsável:** Analista de Testes (QA) - Guilherme Licati
+**Responsável:** Analista de Testes (QA) - Guilherme Licati  
 **Status:** Planejamento inicial
 
 ---
