@@ -143,7 +143,7 @@ Funcionalidade: Anexo de ASO
 
 ---
 
-## CT-09 — Cadastro com dados inválidos
+## CT-06 — Cadastro com dados inválidos
 
 **Funcionalidade:** Cadastro  
 **Critérios de aceite:** CA09, CA15  
@@ -171,7 +171,7 @@ Funcionalidade: Validação de dados cadastrais
 
 # Listagem de Funcionários
 
-## CT-06 — Listagem de funcionários cadastrados
+## CT-07 — Listagem de funcionários cadastrados
 
 **Funcionalidade:** Listagem  
 **Critério de aceite:** CA01  
@@ -194,7 +194,7 @@ Funcionalidade: Listagem de funcionários
 
 ---
 
-## CT-07 — Filtragem de funcionários ativos
+## CT-08 — Filtragem de funcionários ativos
 
 **Funcionalidade:** Listagem  
 **Critério de aceite:** CA02  
@@ -219,7 +219,7 @@ Funcionalidade: Filtragem de funcionários
 
 ---
 
-## CT-08 — Alterar situação do funcionário
+## CT-09 — Alterar situação do funcionário
 
 **Funcionalidade:** Listagem  
 **Critério de aceite:** CA06  
