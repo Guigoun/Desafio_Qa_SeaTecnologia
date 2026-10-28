@@ -63,3 +63,45 @@ No primeiro dia, utilizei a IA principalmente como ferramenta de apoio ao planej
 As interações contribuíram para estruturar o plano de testes, levantar dúvidas sobre regras de negócio e analisar aspectos da interface e da API.
 
 Também foi possível identificar limitações nas respostas geradas, reforçando a necessidade de validar as informações e manter o julgamento técnico durante o processo de testes.
+
+
+# Diário de Utilização de IA — Dia 2
+
+**IA utilizada:** ChatGPT  
+**Objetivo:** Apoiar a elaboração do plano de testes, a definição de prioridades e a estruturação dos cenários de teste.
+
+---
+
+## 1. Elaboração do plano de testes
+
+Inicialmente, utilizei a IA para compreender como elaborar e estruturar um plano de testes, buscando entender quais informações deveriam compor o documento.
+
+Durante o desenvolvimento, fui construindo o plano com o auxílio da ferramenta, realizando perguntas, revisando os conteúdos e fazendo ajustes para manter a documentação alinhada aos objetivos do desafio.
+
+Também debati com a IA sobre **quais funcionalidades deveriam receber maior prioridade nos testes**, considerando sua importância para o funcionamento da aplicação e os possíveis impactos de falhas.
+
+Após finalizar o conteúdo, solicitei que a IA organizasse o documento em formato **Markdown**, para facilitar sua inclusão no repositório GitHub.
+
+**Documento produzido:** [plano.md](https://github.com/Guigoun/Desafio_Qa_SeaTecnologia/blob/main/Plano_de_testes/plano.md)
+
+## 2. Elaboração dos cenários de teste
+
+Em seguida, solicitei à IA um modelo básico para estruturar os cenários de teste, utilizando-o como referência para desenvolver meus próprios cenários.
+
+Após elaborar os cenários, pedi que a ferramenta avaliasse o conteúdo, identificando possíveis melhorias na escrita, na organização e na utilização de uma linguagem um pouco mais técnica.
+
+Com base nas sugestões recebidas, revisei e ajustei os cenários, procurando manter uma descrição clara dos comportamentos esperados da aplicação.
+
+Por fim, solicitei que a IA organizasse o conteúdo em formato **Markdown**, permitindo sua inclusão no repositório.
+
+**Documento produzido:** [cenarios.md](https://github.com/Guigoun/Desafio_Qa_SeaTecnologia/blob/main/Cenarios_de_testes/cenarios.md)
+
+---
+
+## 3. Considerações do dia
+
+No segundo dia, utilizei a IA principalmente como apoio ao aprendizado, à revisão e à organização da documentação de testes.
+
+A ferramenta contribuiu para compreender a estrutura de um plano de testes, discutir a priorização das funcionalidades e melhorar a escrita dos cenários.
+
+As decisões e os ajustes foram realizados durante o desenvolvimento dos documentos, utilizando as respostas da IA como sugestões e mantendo minha participação na elaboração e revisão do conteúdo.
