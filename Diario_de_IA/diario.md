@@ -108,11 +108,18 @@ Durante esse processo, utilizei a IA para:
 - Avaliar minha escrita técnica nos registros de execução e relatórios de bugs, identificando pontos que poderiam ser melhorados.
 - Sugerir nomes mais claros e objetivos para os cenários de teste.
 - Refinar a descrição dos objetivos, resultados esperados e resultados obtidos, evitando informações desnecessárias ou ambíguas.
+- **Gerar massas de testes** para utilizar durante as execuções, incluindo dados válidos e inválidos, com o objetivo de verificar diferentes comportamentos e validações do sistema.
 - Padronizar a formatação dos arquivos Markdown, corrigindo espaçamentos, organização de seções e outros detalhes de apresentação.
 
 Além disso, debati com a IA a necessidade de executar e documentar alguns testes exploratórios que identifiquei durante a análise do sistema.
 
 Após avaliar a relevância desses testes e sua relação com o escopo do desafio, decidi executar e registrar a maioria deles. Os demais serão documentados como notas e observações, por não considerar necessária sua execução formal neste momento.
+
+**Documentos produzidos:**
+
+- [relatorio_de_execucoes.md](https://github.com/Guigoun/Desafio_Qa_SeaTecnologia/blob/main/Execucao_testes/relatorio_de_execucoes.md)
+- [relatorio_de_bugs.md](https://github.com/Guigoun/Desafio_Qa_SeaTecnologia/blob/main/Bugs/relatorio_de_bugs.md)
+- [massa.md](https://github.com/Guigoun/Desafio_Qa_SeaTecnologia/blob/main/Massa_de_Testes/massa.md)
 
 ---
 
@@ -120,12 +127,12 @@ Após avaliar a relevância desses testes e sua relação com o escopo do desafi
 
 Durante o segundo dia, utilizei a IA como ferramenta de apoio ao aprendizado, à elaboração e à revisão da documentação de testes.
 
-Inicialmente, a IA me auxiliou a compreender a estrutura de um plano de testes, organizar os cenários e discutir a priorização das funcionalidades. Posteriormente, também foi utilizada para esclarecer dúvidas sobre regras de negócio, melhorar minha escrita técnica e padronizar os registros de execução e os relatórios de bugs.
+Inicialmente, a IA me auxiliou a compreender a estrutura de um plano de testes, organizar os cenários e discutir a priorização das funcionalidades. Posteriormente, também foi utilizada para esclarecer dúvidas sobre regras de negócio, gerar massas de testes com dados válidos e inválidos, melhorar minha escrita técnica e padronizar os registros de execução e os relatórios de bugs.
 
-Um dos principais pontos de aprendizado foi compreender melhor a importância de documentar os testes de forma objetiva, mantendo a rastreabilidade entre cenários, execuções, evidências e defeitos encontrados.
+Um dos principais pontos de aprendizado foi compreender melhor a importância de documentar os testes de forma objetiva, mantendo a rastreabilidade entre cenários, execuções, evidências e defeitos encontrados. A geração das massas de testes também contribuiu para a preparação das execuções, permitindo trabalhar com diferentes entradas e situações de validação.
 
 Também pude refletir sobre a necessidade de executar determinados testes exploratórios, considerando sua relevância, o escopo do desafio e o tempo disponível.
 
-A IA contribuiu principalmente com explicações, sugestões de estrutura e revisões. Entretanto, participei diretamente da elaboração dos documentos, analisei as sugestões recebidas e tomei as decisões sobre quais testes executar, como registrar os resultados e quais ajustes aplicar.
+A IA contribuiu principalmente com explicações, sugestões de estrutura, geração de dados de teste e revisões. Entretanto, participei diretamente da elaboração dos documentos, analisei as sugestões recebidas e tomei as decisões sobre quais testes executar, como registrar os resultados e quais ajustes aplicar.
 
 Considero que o uso da IA neste dia contribuiu para meu desenvolvimento técnico, ajudando a compreender melhor as atividades de um Analista de Testes e a produzir uma documentação mais organizada e consistente.
