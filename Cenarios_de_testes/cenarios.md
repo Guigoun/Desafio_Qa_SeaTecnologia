@@ -12,7 +12,7 @@
 ## CT-01 — Cadastro de funcionário com dados válidos
 
 **Funcionalidade:** Cadastro de Funcionários  
-**Critérios de aceite:** CA08, CA09  
+**Critérios de aceite:** CA08, CA09, CA20
 **Prioridade:** Alta  
 **Tipo:** Positivo  
 
