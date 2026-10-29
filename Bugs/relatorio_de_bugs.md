@@ -1,7 +1,8 @@
 # Relatório de BUGS
 
-## BUG01 - Sistema não valida o campo CPF e permite cadastro com duplicidade  
-**Cenário de teste relacionado:** CT-03  
+## BUG-01 - Sistema não valida o campo CPF e permite cadastro com duplicidade  
+**Execução de teste relacionado:** EV-03  
+**Cenário de teste relacionado:** CT-03 
 **Funcionalidade:** Cadastro de Funcionários  
 **Severidade:** Alta  
 **Prioridade:** Alta  
@@ -30,19 +31,20 @@ O sistema não valida o campo CPF permitindo a realização do cadastro e não e
 ## 5. Evidências
 **Evidência 01 — [CPF de funcionário cadastrado]**
 
-![Evidência 01](../evidencias/CT-XXX/evidencia-01.png)
+![Evidência 01](../Evidencias/EV-04.png)
 
 **Evidência 02 — [Preenchimento do campo com cpf já cadastrado e dos demais campos obrigatórios]**
 
-![Evidência 02](../evidencias/CT-XXX/evidencia-02.png)
+![Evidência 02](../Evidencias/EV-05.png)
 
 **Evidência 03 — [Cadastro realizado com duplicidade do CPF]**
 
-![Evidência 03](../evidencias/CT-XXX/evidencia-02.png)
+![Evidência 03](../Evidencias/EV-06.png)
 
 ---
 
-## BUG-02 - Botão para associar EPI ao funcionário está inativo
+## BUG-02 - Botão para associar multiplas EPIs ao funcionário está inativo
+**Execução de teste relacionado:** EV-04
 **Cenário de teste relacionado:** CT-04  
 **Funcionalidade:** Cadastro de Funcionários  
 **Severidade:** Alta  
@@ -57,27 +59,28 @@ O sistema não valida o campo CPF permitindo a realização do cadastro e não e
 
   1. Preencher campos obrigatórios com dados válidos
   2. Preenhcer campos obrigatórios da EPI
-  3. Adicionar EPI
+  3. Clicar no botão "Adicionar EPI"
 
 ## 3. Resultado esperado:
 
-O sistema deve associar o EPI ao funcionário e exibi-lo na interface
+O sistema deve associar o EPI ao funcionário e exibi-lo corretamente na interface
 
 ## 4. Resultado obtido
 
-O sistema não associa o EPI ao funcionário não o exibindo-o na interface
+O sistema não associa o EPI selecionado ao funcionário nem o exibe na interface
 
 ## 5. Evidências
 **Evidência 04 — [Botão para "Adicionar EPI Inativo"]**
 
-![Evidência 04](../evidencias/CT-XXX/evidencia-01.png)
+![Evidência 04](../Evidencias/EV-07.mp4)
 
 ---
 
-## BUG-03 - Botão para associar EPI ao funcionário está inativo  
-**Cenário de teste relacionado:** CT-04  
+## BUG-03 - Botão para adicionar outra atividade ao funcionário está inativo  
+**Execução de teste relacionado:** EV-05
+**Cenário de teste relacionado:** CT-05  
 **Funcionalidade:** Cadastro de Funcionários  
-**Severidade:** Alta (Afeta diretamente na regra de negócios sobre uso obrigatório de EPI)  
+**Severidade:** Alta  
 **Prioridade:** Alta   
 **Ambiente:** Google Chrome  
 
@@ -100,46 +103,15 @@ O sistema exibir a nova atividade adicionada ao funcionário
 O sistema não adiciona atividade ao funcionário e redireciona para Listagem de produtos
 
 ## 5. Evidências
-**Evidência 06 — [Sistema não adiciona atividade e redireciona para Listagem de funcionários]**
+**Evidência 5 — [Sistema não adiciona atividade e redireciona para Listagem de funcionários]**
 
-![Evidência 06](../evidencias/CT-XXX/evidencia-01.png)
-
----
-
-## BUG-04 - Botão para associar EPI ao funcionário está inativo  
-**Cenário de teste relacionado:** CT-04  
-**Funcionalidade:** Cadastro de Funcionários  
-**Severidade:** Alta  
-**Prioridade:** Alta   
-**Ambiente:** Google Chrome  
-
-## 1. Pré-condições:
-  - Aplicação disponível e Acessível
-  - Acessar o formulário de cadastro
-
-## 2. Passos para reproduzir:
-
-  1. Preencher campos obrigatórios com dados válidos
-  2. Preenhcer campos obrigatórios da EPI
-  3. Adicionar EPI
-
-## 3. Resultado esperado:
-
-O sistema deve associar o EPI ao funcionário e exibi-lo na interface
-
-## 4. Resultado obtido
-
-O sistema não associa o EPI ao funcionário não o exibindo-o na interface
-
-## 5. Evidências
-**Evidência 05 — [Botão para "Adicionar EPI Inativo"]**
-
-![Evidência 05](../evidencias/CT-XXX/evidencia-01.png)
+![Evidência 05](../Evidencias/EV-08.mp4)
 
 ---
 
-## BUG-05 - Sistema não mantem vinculo do ASO no cadastro do funcionário  
-**Cenário de teste relacionado:** CT-05  
+## BUG-04 - Sistema não mantem vinculo do ASO no cadastro do funcionário  
+**Cenário de teste relacionado:** CT-06    
+**Execução de teste relacionado:** EV-05  
 **Funcionalidade:** Cadastro de Funcionários  
 **Severidade:** Média  
 **Prioridade:** Baixa  
@@ -167,12 +139,13 @@ O sistema não adiciona atividade ao funcionário e redireciona para Listagem de
 ## 5. Evidências
 **Evidência 06 — [Sistema não adiciona atividade e redireciona para Listagem de funcionários]**
 
-![Evidência 06](../evidencias/CT-XXX/evidencia-01.png)
+![Evidência 06](../Evidencias/EV-09.mp4)
 
 ---
 
-## BUG-06 - Sistema não valida campos e cadastra usuário com dados inválidos  
-**Cenário de teste relacionado:** CT-06  
+## BUG-05 - Sistema não valida campos e cadastra usuário com dados inválidos  
+**Execução de teste relacionado:** EV-07
+**Cenário de teste relacionado:** CT-07  
 **Funcionalidade:** Cadastro de Funcionários  
 **Severidade:** Alta   
 **Prioridade:** Alta  
@@ -198,13 +171,13 @@ O sistema não valida os campos obrigatórios, não exibe mensagens para dados i
 ## 5. Evidências
 **Evidência 06 — [Sistema cadastra funcionário com dados válidos]**
 
-![Evidência 06](../evidencias/CT-XXX/evidencia-01.png)
+![Evidência 06](../Evidencias/EV-10.mp4)
 
 ---
 
 ## BUG-07 - Sistema não apresenta resposta ao tentar acionar ações do funcionário  
 **Execução:** EV-11
-**Cenário de teste relacionado:** CT-09, CT-10, CT-11, CT12  
+**Cenário de teste relacionado:** CT-10, CT-11, CT-12, CT13  
 **Funcionalidade:** Listagem de funcionários  
 **Severidade:** Alta   
 **Prioridade:** Média
@@ -230,13 +203,13 @@ O sistema não apresentou nenhuma resposta visual ou funcional, as ações não 
 ## 5. Evidências
 **Evidência 06 — [Sistema cadastra funcionário com dados válidos]**
 
-![Evidência 06](../evidencias/CT-XXX/evidencia-01.png)
+![Evidência 06](../Evidencias/EV-14.mp4)
 
 ---
 
 ## BUG-08 - Navegação entre páginas da listagem de funcionários não funciona
 **Execução:** EV-12
-**Cenário de teste relacionado:** CT-13
+**Cenário de teste relacionado:** CT-14
 **Funcionalidade:** Listagem de funcionários  
 **Severidade:** Média   
 **Prioridade:** Média   

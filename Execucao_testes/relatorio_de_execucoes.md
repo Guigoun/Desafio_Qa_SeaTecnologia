@@ -55,7 +55,7 @@ O sistema cadastra o funcionário com sucesso e é exibido na lista
 
 **Evidência 02 — [Payload contendo informações de cadastro com dados válidos]**
 
-![Evidência 001](../Evidencias/EV-001.png)
+![Evidência 02](../Evidencias/EV-02.png)
 
 ---
 
@@ -108,9 +108,9 @@ O sistema impede o cadastro e exibe a mensagem para preenchimento do campo obrig
 
 ## 5. Evidências
 
-**Evidência 02 — [Campos obrigatórios em branco]**
+**Evidência 03 — [Campos obrigatórios em branco]**
 
-![Evidência 02](../Evidencias/EV-02.png)
+![Evidência 03](../Evidencias/EV-03.png)
 
 ---
 
@@ -168,15 +168,15 @@ O sistema não valida o campo CPF e realiza o cadastro do funcionário
 
 **Evidência 03 — [CPF de funcionário cadastrado]**
 
-![Evidência 03](../Evidencias/EV-03.png)
+![Evidência 04](../Evidencias/EV-04.png)
 
 **Evidência 003 — [Preenchimento do campo com cpf já cadastrado e dos demais campos obrigatórios]**
 
-![Evidência 003](../Evidencias/EV-003.png)
+![Evidência 05](../Evidencias/EV-05.png)
 
 **Evidência 0003 — [Cadastro realizado com duplicidade do CPF]**
 
-![Evidência 0003](../Evidencias/EV-0003.png)
+![Evidência 06](../Evidencias/EV-06.png)
 ---
 
 ## 6. Observações
@@ -238,15 +238,14 @@ O sistema não associa o EPI ao funcionário não o exibindo-o na interface
 
 **Evidência 04 — [Botão para "Adicionar EPI Inativo"]**
 
-![Evidência 04](../Evidencias/EV-04.mp4)
+![Evidência 07](../Evidencias/EV-07.mp4)
 
 ---
 
 # Evidência de Execução — EV-05
 
 ## Informações do Teste
-
-**Teste Exploratório**   
+**ID:** CT-05
 **Cenário:**  Adicionar outra atividade à um funcionário  
 **Data da execução:**  28/10/2026  
 **Ambiente:**  Homologação  
@@ -293,16 +292,16 @@ O sistema não adiciona atividade ao funcionário e redireciona para Listagem de
 
 ## 5. Evidências
 
-**Evidência 05 — [Sistema não adiciona outra atividade]**
+**Evidência 08 — [Sistema não adiciona outra atividade]**
 
-![Evidência 05](../Evidencias/EV-05.mp4)
+![Evidência 08](../Evidencias/EV-08.mp4)
 
 ---
 
 # Evidência de Execução — EV-06
 
 ## Informações do Teste
-**ID:** CT-05
+**ID:** CT-06
 **Cenário:** Anexar ASO no cadastro do funcionário
 **Data da execução:**  28/10/2026
 **Ambiente:**  Homologação
@@ -353,7 +352,7 @@ O sistema cadastra funcionário mas não vincula ASO em seus dados
 
 **Evidência 06 — [ASO não vinculado ao cadastro]**
 
-![Evidência 06](../Evidencias/EV-06.mp4)
+![Evidência 09](../Evidencias/EV-09.mp4)
 
 ## 6. Observações
 
@@ -365,7 +364,7 @@ por isso a única evidência viável utilizada foi o payload da API
 # Evidência de Execução — EV-07
 
 ## Informações do Teste
-**ID:** CT-06
+**ID:** CT-07
 **Cenário:** Cadastro com dados inválidos
 **Data da execução:**  28/10/2026
 **Ambiente:**  Homologação
@@ -396,7 +395,7 @@ por isso a única evidência viável utilizada foi o payload da API
 2. Preencha os campos com dádos válidos
 3. Clique no botão "Salvar"
 5. Clique em salvar
-6. 
+
 ---
 
 ## 3. Resultado Esperado
@@ -413,9 +412,9 @@ O sistema não valida os campos obrigatórios, não exibe mensagens para dados i
 
 ## 5. Evidências
 
-**Evidência 07 — [Sistema permite cadastro do funcionário com dados inválidos]**
+**Evidência 10 — [Sistema permite cadastro do funcionário com dados inválidos]**
 
-![Evidência 07](../Evidencias/EV-07.mp4)
+![Evidência 10](../Evidencias/EV-10.mp4)
 
 ## 6. Observações
 
@@ -474,9 +473,9 @@ O sistema cadastra o funcionário mas exibe que utiliza EPI
 
 ## 5. Evidências
 
-**Evidência 08 — [Sistema vincula funcionário a uma EPI]**
+**Evidência 11 — [Sistema vincula funcionário a uma EPI]**
 
-![Evidência 08](../Evidencias/EV-08.mp4)
+![Evidência 11](../Evidencias/EV-11.mp4)
 
 ## 6. Observações
 
@@ -488,7 +487,7 @@ por isso a única evidência viável utilizada foi o payload da API
 # Evidência de Execução — EV-09
 
 ## Informações do Teste
-**ID:** CT-07
+**ID:** CT-08
 **Cenário:**  Listagem de funcionários
 **Data da execução:**  29/10/2026  
 **Ambiente:**  Homologação  
@@ -505,8 +504,9 @@ por isso a única evidência viável utilizada foi o payload da API
 
 ## 2. Passos Executados
 
-1. Acesse a aplicação "https://analista-teste.seatecnologia.com.br/"
-2. Visualize a lista dos funcionários cadastrados
+1. Acessar a aplicação 
+2. Visualizar a lista dos funcionários cadastrados
+
 ---
 
 ## 3. Resultado Esperado
@@ -525,14 +525,14 @@ O sistema apresentou o registro dos funcionários cadastrados e exibiu seus dado
 
 **Evidência 09 — [Visualização da lista de funcionários cadastrados]**
 
-![Evidência 09](../Evidencias/EV-09.png)
+![Evidência 12](../Evidencias/EV-12.png)
 
 ---
 
 # Evidência de Execução — EV-10
 
 ## Informações do Teste
-**ID:** CT-08
+**ID:** CT-09
 **Cenário:**  Filtagem e exibição de funcionários ativos 
 **Data da execução:**  29/10/2026  
 **Ambiente:**  Homologação  
@@ -570,14 +570,14 @@ O sistema realiza a filtragem apresentando o funcionários ativos
 
 **Evidência 10 — [Visualização da lista de funcionários ativos no sistema]**
 
-![Evidência 10](../Evidencias/EV-10.mp4)
+![Evidência 13](../Evidencias/EV-13.mp4)
 
 ---
 
 # Evidência de Execução — EV-11
 
 ## Informações do Teste
-**ID:** CT-09, CT-10, CT-11, CT-12
+**ID:** CT-10, CT-11, CT-12, CT-13
 **Cenário:**  Opção de Ações para alterar situação, editar, excluir e visualizar dados do funcionário
 **Data da execução:**  29/10/2026  
 **Ambiente:**  Homologação  
@@ -614,14 +614,14 @@ Ao tentar acionar as opções Alterar situação, Editar, Visualizar e Excluir, 
 
 **Evidência 11 — [Botão de ações do funcionário inativo]**
 
-![Evidência 11](../Evidencias/EV-11.mp4)
+![Evidência 14](../Evidencias/EV-14.mp4)
 
 ---
 
 # Evidência de Execução — EV-12
 
 ## Informações do Teste
-**ID:** CT-13
+**ID:** CT-14
 **Cenário:**  Navegação pela lista de funcionários
 **Data da execução:**  29/10/2026  
 **Ambiente:**  Homologação  
@@ -659,7 +659,7 @@ Ao realizar a rolagem vertical, a listagem não permite alcançar todos os regis
 
 **Evidência 12 — [Botão de ações do funcionário inativo]**
 
-![Evidência 12](../Evidencias/EV-12.mp4)
+![Evidência 15](../Evidencias/EV-15.mp4)
 
 ---
 
