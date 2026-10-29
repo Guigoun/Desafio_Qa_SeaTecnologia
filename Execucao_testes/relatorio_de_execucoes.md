@@ -4,11 +4,11 @@
 ## Informações do Teste
 
 **ID:** CT-01  
-**Cenário:**  Cadastrar funcionário com dados válidos
-**Data da execução:**  28/10/2026
-**Ambiente:**  Homologação
-**Navegador:**  Chrome
-**Status:** Aprovado  
+**Cenário:**  Cadastrar funcionário com dados válidos  
+**Data da execução:**  28/10/2026  
+**Ambiente:**  Homologação  
+**Navegador:**  Chrome  
+**Status:** Aprovado   
 
 ---
 
@@ -51,11 +51,11 @@ O sistema cadastra o funcionário com sucesso e é exibido na lista
 
 **Evidência 01 — [Preenchimento dos campos obrigatórios com dados válidos fornecidos]**
 
-![Evidência 01](../evidencias/CT-XXX/evidencia-01.png)
+![Evidência 01](../Evidencias/EV-01.png)
 
-**Evidência 02 — [Descrição]**
+**Evidência 02 — [Payload contendo informações de cadastro com dados válidos]**
 
-![Evidência 02](../evidencias/CT-XXX/evidencia-02.png)
+![Evidência 001](../Evidencias/EV-001.png)
 
 ---
 
@@ -108,9 +108,9 @@ O sistema impede o cadastro e exibe a mensagem para preenchimento do campo obrig
 
 ## 5. Evidências
 
-**Evidência 03 — [Campos obrigatórios em branco]**
+**Evidência 02 — [Campos obrigatórios em branco]**
 
-![Evidência 03](../evidencias/CT-XXX/evidencia-01.png)
+![Evidência 02](../Evidencias/EV-02.png)
 
 ---
 
@@ -166,17 +166,17 @@ O sistema não valida o campo CPF e realiza o cadastro do funcionário
 
 ## 5. Evidências
 
-**Evidência 04 — [CPF de funcionário cadastrado]**
+**Evidência 03 — [CPF de funcionário cadastrado]**
 
-![Evidência 04](../evidencias/CT-XXX/evidencia-01.png)
+![Evidência 03](../Evidencias/EV-03.png)
 
-**Evidência 05 — [Preenchimento do campo com cpf já cadastrado e dos demais campos obrigatórios]**
+**Evidência 003 — [Preenchimento do campo com cpf já cadastrado e dos demais campos obrigatórios]**
 
-![Evidência 05](../evidencias/CT-XXX/evidencia-02.png)
+![Evidência 003](../Evidencias/EV-003.png)
 
-**Evidência 06 — [Cadastro realizado com duplicidade do CPF]**
+**Evidência 0003 — [Cadastro realizado com duplicidade do CPF]**
 
-![Evidência 06](../evidencias/CT-XXX/evidencia-02.png)
+![Evidência 0003](../Evidencias/EV-0003.png)
 ---
 
 ## 6. Observações
@@ -185,7 +185,6 @@ A página de listagem não possui um scroll ou um campo para buscar funcionário
 por isso a única evidência viável utilizada foi o payload da API
 
 ---
-
 
 # Evidência de Execução — EV-04
 
@@ -237,9 +236,9 @@ O sistema não associa o EPI ao funcionário não o exibindo-o na interface
 
 ## 5. Evidências
 
-**Evidência 01 — [Botão para "Adicionar EPI Inativo"]**
+**Evidência 04 — [Botão para "Adicionar EPI Inativo"]**
 
-![Evidência 01](../evidencias/CT-XXX/evidencia-01.png)
+![Evidência 04](../Evidencias/EV-04.mp4)
 
 ---
 
@@ -247,11 +246,11 @@ O sistema não associa o EPI ao funcionário não o exibindo-o na interface
 
 ## Informações do Teste
 
-**Teste Exploratório** 
-**Cenário:**  Adicionar outra atividade à um funcionário
-**Data da execução:**  28/10/2026
-**Ambiente:**  Homologação
-**Navegador:**  Google Chrome
+**Teste Exploratório**   
+**Cenário:**  Adicionar outra atividade à um funcionário  
+**Data da execução:**  28/10/2026  
+**Ambiente:**  Homologação  
+**Navegador:**  Google Chrome  
 **Status:** Reprovado  
 
 ---
@@ -294,9 +293,9 @@ O sistema não adiciona atividade ao funcionário e redireciona para Listagem de
 
 ## 5. Evidências
 
-**Evidência 07 — [Botão para "Adicionar EPI Inativo"]**
+**Evidência 05 — [Sistema não adiciona outra atividade]**
 
-![Evidência 07](../evidencias/CT-XXX/evidencia-01.png)
+![Evidência 05](../Evidencias/EV-05.mp4)
 
 ---
 
@@ -335,6 +334,7 @@ O sistema não adiciona atividade ao funcionário e redireciona para Listagem de
 3. Clique no botão "Selecionar o arquivo"
 4. Anexe o arquivo desejado (ex: pdf, jpeg)
 5. Clique em salvar
+
 ---
 
 ## 3. Resultado Esperado
@@ -345,15 +345,15 @@ O sistema deve cadastrar o funcionário com sucesso e o ASO deve estar associado
 
 ## 4. Resultado Obtido
 
-O sistema não adiciona atividade ao funcionário e redireciona para Listagem de produtos
+O sistema cadastra funcionário mas não vincula ASO em seus dados
 
 ---
 
 ## 5. Evidências
 
-**Evidência 08 — [Botão para "Adicionar EPI Inativo"]**
+**Evidência 06 — [ASO não vinculado ao cadastro]**
 
-![Evidência 08](../evidencias/CT-XXX/evidencia-01.png)
+![Evidência 06](../Evidencias/EV-06.mp4)
 
 ## 6. Observações
 
@@ -413,9 +413,9 @@ O sistema não valida os campos obrigatórios e cadastra o funcionário
 
 ## 5. Evidências
 
-**Evidência 09 — [Sistema permite cadastro do funcionário com dados inválidos]**
+**Evidência 07 — [Sistema permite cadastro do funcionário com dados inválidos]**
 
-![Evidência 09](../evidencias/CT-XXX/evidencia-01.png)
+![Evidência 07](../Evidencias/EV-07.mp4)
 
 ## 6. Observações
 
@@ -428,26 +428,27 @@ por isso a única evidência viável utilizada foi o payload da API
 
 ## Informações do Teste
 
-**Cenário:** Cadastro com dados inválidos
-**Data da execução:**  28/10/2026
-**Ambiente:**  Homologação
-**Navegador:**  Google Chrome
-**Status:** Aprovado
+**Teste Exploratório**
+**Cenário:**  Marcar opção "O trabalhador não usa EPI"  
+**Data da execução:**  28/10/2026  
+**Ambiente:**  Homologação  
+**Navegador:**  Google Chrome  
+**Status:** Aprovado  
 
 ---
 
 ## 1. Dados Utilizados
 
 - Situação: Inativo  
-- nome: 123456!@#$%
-- CPF: 529@AC2#247
-- RG: 781OHUFI@#$
+- nome: Mariana Costa Teste
+- CPF: 529.614.803-70
+- RG: 5938274
 - Sexo: Feminino
 - Data de nascimento: 22/07/1998
 - Cargo: Cargo 02
 - Atividade: Ativid 01
 - EPI: Capacete de Segurança
-- CA: mdaih!@#@!$
+- CA: 123456
 - ASO: Não anexado
 
 ---
@@ -456,28 +457,87 @@ por isso a única evidência viável utilizada foi o payload da API
 
 1. Acesse o formulário de cadastro
 2. Preencha os campos com dádos válidos
-3. Clique no botão "Selecionar o arquivo"
-4. Anexe o arquivo desejado (ex: pdf, jpeg)
-5. Clique em salvar
+3. Cique no botão "O trabalhador não usa EPI"
 ---
 
 ## 3. Resultado Esperado
 
-O sistema deve impedir o cadastro do funcionário e exibir mensagens dados inválidos nos campos
+O sistema deve cadastrar o funcionário e exibir em seus dados que não utiliza EPI
 
 ---
 
 ## 4. Resultado Obtido
 
-O sistema não valida os campos obrigatórios e cadastra o funcionário
+O sistema cadastra o funcionário mas exibe que utiliza EPI
 
 ---
 
 ## 5. Evidências
 
-**Evidência 09 — [Sistema permite cadastro do funcionário com dados inválidos]**
+**Evidência 08 — [Sistema vincula funcionário a uma EPI]**
 
-![Evidência 09](../evidencias/CT-XXX/evidencia-01.png)
+![Evidência 08](../Evidencias/EV-08.mp4)
+
+## 6. Observações
+
+A página de listagem não possui um scroll ou um campo para buscar funcionários cadastrados,
+por isso a única evidência viável utilizada foi o payload da API
+
+---
+
+# Evidência de Execução — EV-09
+
+## Informações do Teste
+
+**Teste Exploratório**
+**Cenário:**  Tra  
+**Data da execução:**  28/10/2026  
+**Ambiente:**  Homologação  
+**Navegador:**  Google Chrome  
+**Status:** Aprovado  
+
+---
+
+## 1. Dados Utilizados
+
+- Situação: Inativo  
+- nome: Mariana Costa Teste
+- CPF: 529.614.803-70
+- RG: 5938274
+- Sexo: Feminino
+- Data de nascimento: 22/07/1998
+- Cargo: Cargo 02
+- Atividade: Ativid 01
+- EPI: Capacete de Segurança
+- CA: 123456
+- ASO: Não anexado
+
+---
+
+## 2. Passos Executados
+
+1. Acesse o formulário de cadastro
+2. Preencha os campos com dádos válidos
+3. Cique no botão "O trabalhador não usa EPI"
+---
+
+## 3. Resultado Esperado
+
+O sistema deve cadastrar o funcionário e exibir em seus dados que não utiliza EPI
+
+---
+
+## 4. Resultado Obtido
+
+O sistema cadastra o funcionário mas exibe que utiliza EPI
+
+---
+
+## 5. Evidências
+
+**Evidência 08 — [Sistema vincula funcionário a uma EPI]**
+
+![Evidência 08](../Evidencias/EV-08.mp4)
 
 ## 6. Observações
 
