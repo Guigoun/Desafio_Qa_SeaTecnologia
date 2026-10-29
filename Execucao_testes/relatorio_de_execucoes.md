@@ -525,7 +525,7 @@ O sistema apresentou o registro dos funcionários cadastrados e exibiu seus dado
 
 **Evidência 09 — [Visualização da lista de funcionários cadastrados]**
 
-![Evidência 09](../Evidencias/EV-08.mp4)
+![Evidência 09](../Evidencias/EV-09.png)
 
 ---
 
@@ -549,7 +549,7 @@ O sistema apresentou o registro dos funcionários cadastrados e exibiu seus dado
 
 ## 2. Passos Executados
 
-1. Acesse a aplicação "https://analista-teste.seatecnologia.com.br/"
+1. Acessar a aplicação 
 2. Clicar no botão "Ver apenas ativos"
    
 ---
@@ -570,7 +570,7 @@ O sistema realiza a filtragem apresentando o funcionários ativos
 
 **Evidência 10 — [Visualização da lista de funcionários ativos no sistema]**
 
-![Evidência 10](../Evidencias/EV-08.mp4)
+![Evidência 10](../Evidencias/EV-10.mp4)
 
 ---
 
@@ -614,7 +614,7 @@ Ao tentar acionar as opções Alterar situação, Editar, Visualizar e Excluir, 
 
 **Evidência 11 — [Botão de ações do funcionário inativo]**
 
-![Evidência 11](../Evidencias/EV-08.mp4)
+![Evidência 11](../Evidencias/EV-11.mp4)
 
 ---
 
@@ -659,7 +659,7 @@ Ao realizar a rolagem vertical, a listagem não permite alcançar todos os regis
 
 **Evidência 12 — [Botão de ações do funcionário inativo]**
 
-![Evidência 12](../Evidencias/EV-08.mp4)
+![Evidência 12](../Evidencias/EV-12.mp4)
 
 ---
 

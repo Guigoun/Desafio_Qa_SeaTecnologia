@@ -11,7 +11,7 @@
 
 ## CT-01 — Cadastro de funcionário com dados válidos
 
-**Funcionalidade:** Cadastro  
+**Funcionalidade:** Cadastro de Funcionários  
 **Critérios de aceite:** CA08, CA09  
 **Prioridade:** Alta  
 **Tipo:** Positivo  
@@ -39,7 +39,7 @@ Funcionalidade: Cadastro de funcionários
 
 ## CT-02 — Cadastro com campos obrigatórios vazios
 
-**Funcionalidade:** Cadastro  
+**Funcionalidade:** Cadastro de Funcionários  
 **Critérios de aceite:** CA08, CA15  
 **Prioridade:** Alta  
 **Tipo:** Negativo  
@@ -63,7 +63,7 @@ Funcionalidade: Cadastro de funcionários
 
 ## CT-03 — Cadastro com CPF duplicado
 
-**Funcionalidade:** Cadastro  
+**Funcionalidade:** Cadastro de Funcionários  
 **Critério de aceite:** CA10  
 **Prioridade:** Alta  
 **Tipo:** Negativo  
@@ -91,8 +91,8 @@ Funcionalidade: Cadastro de funcionários
 
 ## CT-04 — Associação de múltiplos EPIs
 
-**Funcionalidade:** Cadastro  
-**Critérios de aceite:** CA11, CA12  
+**Funcionalidade:** Cadastro de Funcionários  
+**Critérios de aceite:** CA12  
 **Prioridade:** Média  
 **Tipo:** Positivo  
 
@@ -116,9 +116,35 @@ Funcionalidade: Associação de EPIs
 
 ---
 
-## CT-05 — Anexar ASO opcional no cadastro
+## CT-05 — Adicionar outra atividade para um funcionário
 
-**Funcionalidade:** Cadastro  
+**Funcionalidade:** Cadastro de Funcionários  
+**Critérios de aceite:** CA11  
+**Prioridade:** Média  
+**Tipo:** Positivo  
+
+**Pré-condições:**
+- Aplicação disponível e acessível.
+- Formulário de cadastro disponível.
+- Dados obrigatórios preparados.
+- Atividade e EPIs disponíveis para seleção.
+
+```gherkin
+Funcionalidade: Associação de EPIs
+
+  Cenário: Adicionar outra atividade a um funcionário
+    Dado que estou no formulário de cadastro
+    E selecionei uma atividade
+    Quando clico no botão "Adicionar outra atividade"
+    Então o sistema deve apresentar a atividade adicionada ao funcionário
+    E o botão "Adicionar outra atividade" deve permanecer disponível
+```
+
+---
+
+## CT-06 — Anexar ASO opcional no cadastro
+
+**Funcionalidade:** Cadastro de Funcionários  
 **Critério de aceite:** CA14  
 **Prioridade:** Baixa  
 **Tipo:** Positivo  
@@ -143,9 +169,9 @@ Funcionalidade: Anexo de ASO
 
 ---
 
-## CT-06 — Cadastro com dados inválidos
+## CT-07 — Cadastro com dados inválidos
 
-**Funcionalidade:** Cadastro  
+**Funcionalidade:** Cadastro de Funcionários  
 **Critérios de aceite:** CA09, CA15  
 **Prioridade:** Alta  
 **Tipo:** Negativo  
@@ -171,9 +197,9 @@ Funcionalidade: Validação de dados cadastrais
 
 # Listagem de Funcionários
 
-## CT-07 — Listagem de funcionários cadastrados
+## CT-08 — Listagem de funcionários cadastrados
 
-**Funcionalidade:** Listagem  
+**Funcionalidade:** Listagem de funcionários  
 **Critério de aceite:** CA01  
 **Prioridade:** Alta  
 **Tipo:** Positivo  
@@ -194,9 +220,9 @@ Funcionalidade: Listagem de funcionários
 
 ---
 
-## CT-08 — Filtragem de funcionários ativos
+## CT-09 — Filtragem de funcionários ativos
 
-**Funcionalidade:** Listagem  
+**Funcionalidade:** Listagem de funcionários  
 **Critério de aceite:** CA02  
 **Prioridade:** Média  
 **Tipo:** Positivo  
@@ -219,9 +245,9 @@ Funcionalidade: Filtragem de funcionários
 
 ---
 
-## CT-09 — Alterar situação do funcionário
+## CT-10 — Alterar situação do funcionário
 
-**Funcionalidade:** Listagem  
+**Funcionalidade:** Listagem de funcionários  
 **Critério de aceite:** CA06  
 **Prioridade:** Alta  
 **Tipo:** Positivo  
@@ -245,9 +271,9 @@ Funcionalidade: Situação cadastral
 
 ---
 
-## CT-10 — Editar funcionário
+## CT-11 — Editar funcionário
 
-**Funcionalidade:** Listagem  
+**Funcionalidade:** Listagem de funcionários  
 **Critério de aceite:** CA05  
 **Prioridade:** Alta  
 **Tipo:** Positivo  
@@ -272,9 +298,9 @@ Funcionalidade: Edição de funcionários
 
 ---
 
-## CT-11 — Excluir funcionário
+## CT-12 — Excluir funcionário
 
-**Funcionalidade:** Listagem  
+**Funcionalidade:** Listagem de funcionários  
 **Critério de aceite:** CA07  
 **Prioridade:** Alta  
 **Tipo:** Positivo  
@@ -300,34 +326,9 @@ Funcionalidade: Exclusão de funcionários
 
 ---
 
-## CT-12 — Navegar pela listagem
-
-**Funcionalidade:** Listagem  
-**Critério de aceite:** CA03  
-**Prioridade:** Alta  
-**Tipo:** Positivo  
-
-**Pré-condições:**
-- Aplicação disponível e acessível.
-- Existência de funcionários suficientes para exigir navegação.
-- Página de listagem disponível.
-
-```gherkin
-Funcionalidade: Navegação da listagem
-
-  Cenário: Acessar registros da listagem
-    Dado que existem funcionários cadastrados além dos inicialmente exibidos
-    E estou na página de listagem
-    Quando utilizo o recurso de navegação disponível
-    Então o sistema deve permitir acessar os demais registros
-    E deve apresentar os dados dos funcionários consultados
-```
-
----
-
 ## CT-13 — Consultar dados de funcionário
 
-**Funcionalidade:** Listagem  
+**Funcionalidade:** Listagem de funcionários  
 **Critério de aceite:** CA04  
 **Prioridade:** Média  
 **Tipo:** Positivo  
@@ -346,6 +347,31 @@ Funcionalidade: Consulta de funcionários
     Quando acesso a opção de consultar seus dados
     Então o sistema deve apresentar as informações do funcionário
     E os dados apresentados devem corresponder ao cadastro selecionado
+```
+
+---
+
+## CT-14 — Navegar pela listagem
+
+**Funcionalidade:** Listagem de funcionários  
+**Critério de aceite:** CA03  
+**Prioridade:** Alta  
+**Tipo:** Positivo  
+
+**Pré-condições:**
+- Aplicação disponível e acessível.
+- Existência de funcionários suficientes para exigir navegação.
+- Página de listagem disponível.
+
+```gherkin
+Funcionalidade: Navegação da listagem
+
+  Cenário: Acessar registros da listagem
+    Dado que existem funcionários cadastrados além dos inicialmente exibidos
+    E estou na página de listagem
+    Quando utilizo o recurso de navegação disponível
+    Então o sistema deve permitir acessar os demais registros
+    E deve apresentar os dados dos funcionários consultados
 ```
 
 ---
@@ -407,7 +433,7 @@ Funcionalidade: Validação de métodos HTTP
 
 ## CT-API-03 — Comparar cadastro entre interface e API
 
-**Funcionalidade:** API REST / Cadastro  
+**Funcionalidade:** API REST / Cadastro de Funcionários  
 **Critério de aceite:** CA19  
 **Prioridade:** Alta  
 **Tipo:** Positivo  
