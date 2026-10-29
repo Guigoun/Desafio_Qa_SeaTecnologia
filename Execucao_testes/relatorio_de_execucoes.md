@@ -394,20 +394,20 @@ por isso a única evidência viável utilizada foi o payload da API
 
 1. Acesse o formulário de cadastro
 2. Preencha os campos com dádos válidos
-3. Clique no botão "Selecionar o arquivo"
-4. Anexe o arquivo desejado (ex: pdf, jpeg)
+3. Clique no botão "Salvar"
 5. Clique em salvar
+6. 
 ---
 
 ## 3. Resultado Esperado
 
-O sistema deve impedir o cadastro do funcionário e exibir mensagens dados inválidos nos campos
+O sistema deve impedir o cadastro do funcionário e exibir mensagens para dados inválidos do campos
 
 ---
 
 ## 4. Resultado Obtido
 
-O sistema não valida os campos obrigatórios e cadastra o funcionário
+O sistema não valida os campos obrigatórios, não exibe mensagens para dados inválidos e cadastra o funcionário
 
 ---
 
@@ -488,58 +488,231 @@ por isso a única evidência viável utilizada foi o payload da API
 # Evidência de Execução — EV-09
 
 ## Informações do Teste
-
-**Teste Exploratório**
-**Cenário:**  Tra  
-**Data da execução:**  28/10/2026  
+**ID:** CT-07
+**Cenário:**  Listagem de funcionários
+**Data da execução:**  29/10/2026  
 **Ambiente:**  Homologação  
-**Navegador:**  Google Chrome  
+**Navegador:**  Microsoft Edge
 **Status:** Aprovado  
 
 ---
 
 ## 1. Dados Utilizados
 
-- Situação: Inativo  
-- nome: Mariana Costa Teste
-- CPF: 529.614.803-70
-- RG: 5938274
-- Sexo: Feminino
-- Data de nascimento: 22/07/1998
-- Cargo: Cargo 02
-- Atividade: Ativid 01
-- EPI: Capacete de Segurança
-- CA: 123456
-- ASO: Não anexado
+- Nenhum dado utilizado
 
 ---
 
 ## 2. Passos Executados
 
-1. Acesse o formulário de cadastro
-2. Preencha os campos com dádos válidos
-3. Cique no botão "O trabalhador não usa EPI"
+1. Acesse a aplicação "https://analista-teste.seatecnologia.com.br/"
+2. Visualize a lista dos funcionários cadastrados
 ---
 
 ## 3. Resultado Esperado
 
-O sistema deve cadastrar o funcionário e exibir em seus dados que não utiliza EPI
+O sistema apresenta o registro dos funcionários cadastrados exibindo seus dados
 
 ---
 
 ## 4. Resultado Obtido
 
-O sistema cadastra o funcionário mas exibe que utiliza EPI
+O sistema apresentou o registro dos funcionários cadastrados e exibiu seus dados
 
 ---
 
 ## 5. Evidências
 
-**Evidência 08 — [Sistema vincula funcionário a uma EPI]**
+**Evidência 09 — [Visualização da lista de funcionários cadastrados]**
 
-![Evidência 08](../Evidencias/EV-08.mp4)
+![Evidência 09](../Evidencias/EV-08.mp4)
 
-## 6. Observações
+---
 
-A página de listagem não possui um scroll ou um campo para buscar funcionários cadastrados,
-por isso a única evidência viável utilizada foi o payload da API
+# Evidência de Execução — EV-10
+
+## Informações do Teste
+**ID:** CT-08
+**Cenário:**  Filtagem e exibição de funcionários ativos 
+**Data da execução:**  29/10/2026  
+**Ambiente:**  Homologação  
+**Navegador:**  Google Chrome
+**Status:** Aprovado  
+
+---
+
+## 1. Dados Utilizados
+
+- Nenhum dado utilizado
+
+---
+
+## 2. Passos Executados
+
+1. Acesse a aplicação "https://analista-teste.seatecnologia.com.br/"
+2. Clicar no botão "Ver apenas ativos"
+   
+---
+
+## 3. Resultado Esperado
+
+O sistema deve filtrar e apresentar os funcionários ativos
+
+---
+
+## 4. Resultado Obtido
+
+O sistema realiza a filtragem apresentando o funcionários ativos
+
+---
+
+## 5. Evidências
+
+**Evidência 10 — [Visualização da lista de funcionários ativos no sistema]**
+
+![Evidência 10](../Evidencias/EV-08.mp4)
+
+---
+
+# Evidência de Execução — EV-11
+
+## Informações do Teste
+**ID:** CT-09, CT-10, CT-11, CT-12
+**Cenário:**  Opção de Ações para alterar situação, editar, excluir e visualizar dados do funcionário
+**Data da execução:**  29/10/2026  
+**Ambiente:**  Homologação  
+**Navegador:**  Google Chrome
+**Status:** Reprovado
+
+---
+
+## 1. Dados Utilizados
+
+- Nenhum dado utilizado
+
+---
+
+## 2. Passos Executados
+
+1. Acesse a aplicação 
+2. Clicar nos três pontinhos no canto direito do cadastro apresentado
+   
+---
+
+## 3. Resultado Esperado
+
+O sistema deve abrir as seguintes opções de ação: Alterar situação, Editar, Visualizar, Excluir
+
+---
+
+## 4. Resultado Obtido
+Ao tentar acionar as opções Alterar situação, Editar, Visualizar e Excluir, o sistema não apresentou nenhuma resposta visual ou funcional. As ações não foram executadas e o usuário permaneceu na tela de listagem de funcionários
+
+---
+
+## 5. Evidências
+
+**Evidência 11 — [Botão de ações do funcionário inativo]**
+
+![Evidência 11](../Evidencias/EV-08.mp4)
+
+---
+
+# Evidência de Execução — EV-12
+
+## Informações do Teste
+**ID:** CT-13
+**Cenário:**  Navegação pela lista de funcionários
+**Data da execução:**  29/10/2026  
+**Ambiente:**  Homologação  
+**Navegador:**  Google Chrome
+**Status:** Reprovado
+
+---
+
+## 1. Dados Utilizados
+
+- Nenhum dado utilizado
+
+---
+
+## 2. Passos Executados
+
+1. Acessar a listagem de funcionários
+2. Posicionar o cursor sobre a área da listagem
+3. Realizar a rolagem vertical para baixo
+4. Verificar se os demais registros ficam acessíveis
+5. Realizar a rolagem para cima
+   
+---
+
+## 3. Resultado Esperado
+O sistema deve permitir a navegação vertical pela listagem, possibilitando a visualização dos registros disponíveis sem comprometer a apresentação das informações
+
+---
+
+## 4. Resultado Obtido  
+Ao realizar a rolagem vertical, a listagem não permite alcançar todos os registros, impossibilitando a visualização completa dos funcionários
+---
+
+## 5. Evidências
+
+**Evidência 12 — [Botão de ações do funcionário inativo]**
+
+![Evidência 12](../Evidencias/EV-08.mp4)
+
+---
+
+# Execução de Testes de API
+
+# API-EX-01 — 
+
+**Funcionalidade:** 
+
+**Endpoint:** https://analista-teste.seatecnologia.com.br/employees
+
+**Método HTTP:** GET
+
+**Ferramenta:** Postman
+
+**Status:** Aprovado 
+
+---
+
+### 2. Pré-condições
+- API disponível e acessível no ambiente de testes
+- Endpoint de consulta de funcionários identificado
+- Existência de funcionários previamente cadastrados
+- Credenciais de autenticação válidas, caso exigidas pela API
+
+### 3. Passos de execução
+1. Acessar o Postman
+2. Selecionar o método HTTP
+3. Informar o endpoint
+4. Preencher os parâmetros ou o body, se necessário
+5. Enviar a requisição
+6. Verificar o status HTTP e a resposta retornada
+
+### 4. Dados utilizados
+
+**Parâmetros / Body:**
+
+```json
+{}
+```
+
+### 5. Resultado esperado
+- **Status HTTP:** 
+- **Resposta esperada:** 
+
+### 6. Resultado obtido
+- **Status HTTP:** 
+- **Resposta recebida:** 
+- **Comportamento observado:** 
+
+### 7. Evidência
+- **ID:** EV-001
+- **Arquivo:** [Link da evidência]
+
+### 8. Bug associado
+- **ID:** BUG-001 / Não aplicável
