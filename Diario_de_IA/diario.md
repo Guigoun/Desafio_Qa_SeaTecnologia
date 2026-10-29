@@ -98,10 +98,34 @@ Por fim, solicitei que a IA organizasse o conteúdo em formato **Markdown**, per
 
 ---
 
-## 3. Considerações do dia
+## 3. Apoio na execução dos testes e registro de bugs
 
-No segundo dia, utilizei a IA principalmente como apoio ao aprendizado, à revisão e à organização da documentação de testes.
+Também utilizei a IA para me auxiliar na estruturação dos documentos de execução de testes e relatórios de bugs. Assim como fiz anteriormente com os cenários de teste, solicitei um esqueleto em Markdown para compreender quais informações deveriam ser registradas e como organizá-las de maneira clara e objetiva.
 
-A ferramenta contribuiu para compreender a estrutura de um plano de testes, discutir a priorização das funcionalidades e melhorar a escrita dos cenários.
+Durante esse processo, utilizei a IA para:
 
-As decisões e os ajustes foram realizados durante o desenvolvimento dos documentos, utilizando as respostas da IA como sugestões e mantendo minha participação na elaboração e revisão do conteúdo.
+- Esclarecer dúvidas sobre regras de negócio relacionadas aos EPIs e ao ASO, buscando compreender quais validações poderiam ser realizadas e quais dependiam de requisitos não especificados.
+- Avaliar minha escrita técnica nos registros de execução e relatórios de bugs, identificando pontos que poderiam ser melhorados.
+- Sugerir nomes mais claros e objetivos para os cenários de teste.
+- Refinar a descrição dos objetivos, resultados esperados e resultados obtidos, evitando informações desnecessárias ou ambíguas.
+- Padronizar a formatação dos arquivos Markdown, corrigindo espaçamentos, organização de seções e outros detalhes de apresentação.
+
+Além disso, debati com a IA a necessidade de executar e documentar alguns testes exploratórios que identifiquei durante a análise do sistema.
+
+Após avaliar a relevância desses testes e sua relação com o escopo do desafio, decidi executar e registrar a maioria deles. Os demais serão documentados como notas e observações, por não considerar necessária sua execução formal neste momento.
+
+---
+
+## 4. Considerações do dia
+
+Durante o segundo dia, utilizei a IA como ferramenta de apoio ao aprendizado, à elaboração e à revisão da documentação de testes.
+
+Inicialmente, a IA me auxiliou a compreender a estrutura de um plano de testes, organizar os cenários e discutir a priorização das funcionalidades. Posteriormente, também foi utilizada para esclarecer dúvidas sobre regras de negócio, melhorar minha escrita técnica e padronizar os registros de execução e os relatórios de bugs.
+
+Um dos principais pontos de aprendizado foi compreender melhor a importância de documentar os testes de forma objetiva, mantendo a rastreabilidade entre cenários, execuções, evidências e defeitos encontrados.
+
+Também pude refletir sobre a necessidade de executar determinados testes exploratórios, considerando sua relevância, o escopo do desafio e o tempo disponível.
+
+A IA contribuiu principalmente com explicações, sugestões de estrutura e revisões. Entretanto, participei diretamente da elaboração dos documentos, analisei as sugestões recebidas e tomei as decisões sobre quais testes executar, como registrar os resultados e quais ajustes aplicar.
+
+Considero que o uso da IA neste dia contribuiu para meu desenvolvimento técnico, ajudando a compreender melhor as atividades de um Analista de Testes e a produzir uma documentação mais organizada e consistente.
