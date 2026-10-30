@@ -166,15 +166,15 @@ O sistema não valida o campo CPF e realiza o cadastro do funcionário
 
 ## 5. Evidências
 
-**Evidência 03 — [CPF de funcionário cadastrado]**
+**Evidência 04 — [CPF de funcionário cadastrado]**
 
 ![Evidência 04](../Evidencias/EV-04.png)
 
-**Evidência 003 — [Preenchimento do campo com cpf já cadastrado e dos demais campos obrigatórios]**
+**Evidência 05 — [Preenchimento do campo com cpf já cadastrado e dos demais campos obrigatórios]**
 
 ![Evidência 05](../Evidencias/EV-05.png)
 
-**Evidência 0003 — [Cadastro realizado com duplicidade do CPF]**
+**Evidência 06 — [Cadastro realizado com duplicidade do CPF]**
 
 ![Evidência 06](../Evidencias/EV-06.png)
 ---
@@ -236,7 +236,7 @@ O sistema não associa o EPI ao funcionário não o exibindo-o na interface
 
 ## 5. Evidências
 
-**Evidência 04 — [Botão para "Adicionar EPI Inativo"]**
+**Evidência 07 — [Botão para "Adicionar EPI Inativo"]**
 
 ![Evidência 07](../Evidencias/EV-07.mp4)
 
@@ -350,7 +350,7 @@ O sistema cadastra funcionário mas não vincula ASO em seus dados
 
 ## 5. Evidências
 
-**Evidência 06 — [ASO não vinculado ao cadastro]**
+**Evidência 09 — [ASO não vinculado ao cadastro]**
 
 ![Evidência 09](../Evidencias/EV-09.mp4)
 
@@ -523,7 +523,7 @@ O sistema apresentou o registro dos funcionários cadastrados e exibiu seus dado
 
 ## 5. Evidências
 
-**Evidência 09 — [Visualização da lista de funcionários cadastrados]**
+**Evidência 12 — [Visualização da lista de funcionários cadastrados]**
 
 ![Evidência 12](../Evidencias/EV-12.png)
 
@@ -537,7 +537,7 @@ O sistema apresentou o registro dos funcionários cadastrados e exibiu seus dado
 **Data da execução:**  29/10/2026  
 **Ambiente:**  Homologação  
 **Navegador:**  Google Chrome
-**Status:** Aprovado  
+**Status:** Reprovado  
 
 ---
 
@@ -568,7 +568,7 @@ O sistema realiza a filtragem apresentando o funcionários ativos
 
 ## 5. Evidências
 
-**Evidência 10 — [Visualização da lista de funcionários ativos no sistema]**
+**Evidência 13 — [Visualização da lista de funcionários ativos no sistema]**
 
 ![Evidência 13](../Evidencias/EV-13.mp4)
 
@@ -612,7 +612,7 @@ Ao tentar acionar as opções Alterar situação, Editar, Visualizar e Excluir, 
 
 ## 5. Evidências
 
-**Evidência 11 — [Botão de ações do funcionário inativo]**
+**Evidência 14 — [Botão de ações do funcionário inativo]**
 
 ![Evidência 14](../Evidencias/EV-14.mp4)
 
@@ -657,7 +657,7 @@ Ao realizar a rolagem vertical, a listagem não permite alcançar todos os regis
 
 ## 5. Evidências
 
-**Evidência 12 — [Botão de ações do funcionário inativo]**
+**Evidência 15 — [Botão de ações do funcionário inativo]**
 
 ![Evidência 15](../Evidencias/EV-15.mp4)
 

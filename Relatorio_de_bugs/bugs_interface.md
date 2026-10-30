@@ -1,6 +1,6 @@
-# Relatório de BUGS
+# Relatório de BUGS Interface
 
-## BUG-01 - Sistema não valida o campo CPF e permite cadastro com duplicidade  
+## BUG-IT-01 - Sistema não valida o campo CPF e permite cadastro com duplicidade  
 **Execução de teste relacionado:** EV-03  
 **Cenário de teste relacionado:** CT-03 
 **Funcionalidade:** Cadastro de Funcionários  
@@ -43,7 +43,7 @@ O sistema não valida o campo CPF permitindo a realização do cadastro e não e
 
 ---
 
-## BUG-02 - Botão para associar multiplas EPIs ao funcionário está inativo
+## BUG-IT-02 - Botão para associar multiplas EPIs ao funcionário está inativo
 **Execução de teste relacionado:** EV-04
 **Cenário de teste relacionado:** CT-04  
 **Funcionalidade:** Cadastro de Funcionários  
@@ -76,7 +76,7 @@ O sistema não associa o EPI selecionado ao funcionário nem o exibe na interfac
 
 ---
 
-## BUG-03 - Botão para adicionar outra atividade ao funcionário está inativo  
+## BUG-IT-03 - Botão para adicionar outra atividade ao funcionário está inativo  
 **Execução de teste relacionado:** EV-05
 **Cenário de teste relacionado:** CT-05  
 **Funcionalidade:** Cadastro de Funcionários  
@@ -109,7 +109,7 @@ O sistema não adiciona atividade ao funcionário e redireciona para Listagem de
 
 ---
 
-## BUG-04 - Sistema não mantem vinculo do ASO no cadastro do funcionário  
+## BUG-IT-04 - Sistema não mantem vinculo do ASO no cadastro do funcionário  
 **Cenário de teste relacionado:** CT-06    
 **Execução de teste relacionado:** EV-06  
 **Funcionalidade:** Cadastro de Funcionários  
@@ -143,7 +143,7 @@ O sistema não adiciona atividade ao funcionário e redireciona para Listagem de
 
 ---
 
-## BUG-05 - Sistema não valida campos e cadastra usuário com dados inválidos  
+## BUG-IT-05 - Sistema não valida campos e cadastra usuário com dados inválidos  
 **Execução de teste relacionado:** EV-07
 **Cenário de teste relacionado:** CT-07  
 **Funcionalidade:** Cadastro de Funcionários  
@@ -175,7 +175,7 @@ O sistema não valida os campos obrigatórios, não exibe mensagens para dados i
 
 ---
 
-## BUG-06 - Sistema não apresenta resposta ao tentar acionar ações do funcionário  
+## BUG-IT-06 - Sistema não apresenta resposta ao tentar acionar ações do funcionário  
 **Execução:** EV-11
 **Cenário de teste relacionado:** CT-10, CT-11, CT-12, CT13  
 **Funcionalidade:** Listagem de funcionários  
@@ -207,7 +207,7 @@ O sistema não apresentou nenhuma resposta visual ou funcional, as ações não 
 
 ---
 
-## BUG-07 - Navegação entre páginas da listagem de funcionários não funciona
+## BUG-IT-07 - Navegação entre páginas da listagem de funcionários não funciona
 **Execução:** EV-12
 **Cenário de teste relacionado:** CT-14
 **Funcionalidade:** Listagem de funcionários  
@@ -241,7 +241,7 @@ Ao realizar a rolagem vertical, não é possível alcançar todos os registros d
 
 ---
 
-## BUG-08 - Inconcistencia na listagem de funcionários
+## BUG-IT-08 - Inconcistencia na listagem de funcionários
 **Execução:** EV-12
 **Cenário de teste relacionado:** CT-10
 **Funcionalidade:** Listagem de funcionários  
@@ -265,9 +265,9 @@ O sistema deve realizar a filtragem trazendo apenas os funcionários cadastrados
 
 ## 4. Resultado obtido
 
-O sistema gera novos funcionários na lista copindo o  funcionário cadastrado "Sea Teste", seus dados e novos cadastros vazios
+O sistema gera novos funcionários na lista copindo o  funcionário cadastrado "Sea Teste", seus dados e cadastros vazios atuais
 
 ## 5. Evidências
 **Evidência 10 — [Sistema cadastra funcionário com dados válidos]**
 
-![Evidência 10](../Evidencias/EV-18.mp4)
+![Evidência 10](../Evidencias/EV-010.mp4)
