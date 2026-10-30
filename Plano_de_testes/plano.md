@@ -329,6 +329,8 @@ Durante a exploração, deverão ser investigadas as seguintes questões:
 - A exclusão de funcionário é física ou lógica?
 - Quais operações exigem autenticação ou autorização?
 - Existem diferenças entre as regras aplicadas na interface e na API?
+- Qual a regra de contrato da API sobre os dados do JSON?
+- Existe alguma regra para autenticação e autorização da API?
 
 As respostas serão registradas conforme forem identificadas. Comportamentos não documentados não serão automaticamente classificados como defeitos sem análise do contexto e das regras aplicáveis.
 
