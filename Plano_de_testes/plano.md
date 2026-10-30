@@ -152,7 +152,7 @@ A priorização considerará o impacto potencial de falhas, a importância das r
 | Usabilidade | Média | Clareza e facilidade de utilização |
 | Compatibilidade entre navegadores | Média | Verificação de comportamentos inconsistentes |
 
-As prioridades poderão ser ajustadas conforme os resultados da exploração inicial.
+As prioridades poderão ser ajustadas conforme os resultados da exploração inicial
 
 ## 6. Ambiente, Ferramentas e Dados
 
@@ -242,8 +242,6 @@ Os scripts e as instruções de execução serão disponibilizados no GitHub.
 - Riscos e limitações identificados.
 - Scripts automatizados selecionados implementados ou limitações justificadas.
 - Relatório final de testes elaborado.
-
-A existência de defeitos em aberto não impedirá o encerramento do desafio, desde que sejam registrados e comunicados adequadamente.
 
 ## 9. Documentação e Evidências
 
