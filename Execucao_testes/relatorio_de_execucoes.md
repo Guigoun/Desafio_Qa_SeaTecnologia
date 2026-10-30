@@ -3,7 +3,7 @@
 
 ## Informações do Teste
 
-**ID:** CT-01  
+**ID:** CT-01
 **Cenário:**  Cadastrar funcionário com dados válidos  
 **Data da execução:**  28/10/2026  
 **Ambiente:**  Homologação  
@@ -665,9 +665,11 @@ Ao realizar a rolagem vertical, a listagem não permite alcançar todos os regis
 
 # Execução de Testes de API
 
-# API-EX-01 — 
+# Evidência de Execução — EV-13
 
-**Funcionalidade:** 
+**ID:** CT-API-01
+
+**Funcionalidade:** Cadastro de funcionários
 
 **Endpoint:** https://analista-teste.seatecnologia.com.br/employees
 
@@ -680,10 +682,11 @@ Ao realizar a rolagem vertical, a listagem não permite alcançar todos os regis
 ---
 
 ### 2. Pré-condições
-- API disponível e acessível no ambiente de testes
-- Endpoint de consulta de funcionários identificado
-- Existência de funcionários previamente cadastrados
-- Credenciais de autenticação válidas, caso exigidas pela API
+- API REST disponível e acessível.
+- Endpoint de consulta identificado.
+- Método GET suportado.
+- Funcionários previamente cadastrados.
+- Credenciais válidas, quando exigidas.
 
 ### 3. Passos de execução
 1. Acessar o Postman
@@ -693,26 +696,75 @@ Ao realizar a rolagem vertical, a listagem não permite alcançar todos os regis
 5. Enviar a requisição
 6. Verificar o status HTTP e a resposta retornada
 
-### 4. Dados utilizados
+### 3. Dados Utilizados
 
-**Parâmetros / Body:**
-
-```json
-{}
-```
+**Endpoint:** "/employees" 
+**Método:** GET  
+**Body:** Não utilizado
 
 ### 5. Resultado esperado
-- **Status HTTP:** 
-- **Resposta esperada:** 
+- **Status HTTP:** 200 OK
+- **Resposta esperada:** A API retorna a lista de funcionários cadastrados, contendo os dados previstos para consulta  
 
 ### 6. Resultado obtido
-- **Status HTTP:** 
-- **Resposta recebida:** 
-- **Comportamento observado:** 
+- **Status HTTP:** 200 OK
+- **Resposta recebida:** A API retornou uma lista de funcionários em formato JSON, contendo informações cadastrais  
+- **Comportamento observado:** A requisição foi processada com sucesso, e os registros retornados apresentaram dados dos campos "id", "name", "gender", "cpf", "rg", "birthday", "role", "activity", "epi", usesEpi e "caNumber", retornou json de situação do usuário "isActive"
 
-### 7. Evidência
-- **ID:** EV-001
-- **Arquivo:** [Link da evidência]
 
-### 8. Bug associado
-- **ID:** BUG-001 / Não aplicável
+**Evidência 13 — [Retorno da lista de funcionários cadastrados em formato JSON]**
+
+![Evidência 16](../Evidencias/EV-16.mp4)
+
+---
+
+# Evidência de Execução — EV-14
+
+**ID:** CT-API-02
+
+**Funcionalidade:** Cadastro de funcionários
+
+**Endpoint:** https://analista-teste.seatecnologia.com.br/employees
+
+**Método HTTP:** GET
+
+**Ferramenta:** Postman
+
+**Status:** Aprovado 
+
+---
+
+### 2. Pré-condições
+- API REST disponível e acessível.
+- Endpoint de consulta identificado.
+- Método GET suportado.
+- Funcionários previamente cadastrados.
+- Credenciais válidas, quando exigidas.
+
+### 3. Passos de execução
+1. Acessar o Postman
+2. Selecionar o método HTTP
+3. Informar o endpoint
+4. Preencher os parâmetros ou o body, se necessário
+5. Enviar a requisição
+6. Verificar o status HTTP e a resposta retornada
+
+### 3. Dados Utilizados
+
+**Endpoint:** "/employees" 
+**Método:** GET  
+**Body:** Não utilizado
+
+### 5. Resultado esperado
+- **Status HTTP:** 200 OK
+- **Resposta esperada:** A API retorna a lista de funcionários cadastrados, contendo os dados previstos para consulta  
+
+### 6. Resultado obtido
+- **Status HTTP:** 200 OK
+- **Resposta recebida:** A API retornou uma lista de funcionários em formato JSON, contendo informações cadastrais  
+- **Comportamento observado:** A requisição foi processada com sucesso, e os registros retornados apresentaram dados dos campos "id", "name", "gender", "cpf", "rg", "birthday", "role", "activity", "epi", usesEpi e "caNumber", retornou json de situação do usuário "isActive"
+
+
+**Evidência 14 — [Retorno da lista de funcionários cadastrados em formato JSON]**
+
+![Evidência 17](../Evidencias/EV-17.mp4)

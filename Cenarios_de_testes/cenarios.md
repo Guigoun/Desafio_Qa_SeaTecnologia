@@ -386,11 +386,11 @@ Funcionalidade: Navegação da listagem
 **Tipo:** Positivo  
 
 **Pré-condições:**
-- API REST disponível e acessível.
-- Endpoint de consulta identificado.
-- Método GET suportado.
-- Funcionários previamente cadastrados.
-- Credenciais válidas, quando exigidas.
+- API REST disponível e acessível
+- Endpoint de consulta identificado
+- Método GET suportado
+- Funcionários previamente cadastrados
+- Credenciais válidas, quando exigidas
 
 ```gherkin
 Funcionalidade: Consulta de funcionários via API
@@ -405,7 +405,61 @@ Funcionalidade: Consulta de funcionários via API
 
 ---
 
-## CT-API-02 — Requisição com método não permitido
+## CT-API-02 — Consultar funcionário por id
+
+**Funcionalidade:** API REST  
+**Critérios de aceite:** CA19 
+**Prioridade:** Média  
+**Tipo:** Negativo  
+
+**Pré-condições:**
+- API REST disponível e acessível
+- Endpoint existente identificado
+- Método GET suportado
+- Funcionário previamente cadastrado
+
+```gherkin
+Funcionalidade: Validação de consulta por id
+
+  Cenário: Consultar usuários pelo id no endpoint
+    Dado que existe um endpoint com métodos HTTP definidos
+    E que a API está disponível
+    Quando envio uma requisição GET informando o ID do funcionário
+    Então a API deve retornar o código HTTP 200 (OK)
+    E a resposta deve conter os dados do funcionário solicitado
+    E o ID retornado deve corresponder ao ID informado
+```
+
+---
+
+
+## CT-API-03 — Consultar funcionário por id inexistente
+
+**Funcionalidade:** API REST  
+**Critérios de aceite:** CA17
+**Prioridade:** Alta  
+**Tipo:** Negativo  
+
+**Pré-condições:**
+- API REST disponível e acessível
+- Endpoint existente identificado
+- Método GET suportado
+- Funcionário previamente cadastrado
+
+```gherkin
+Funcionalidade: Validação de consulta por id inexistente
+
+  Cenário: Consultar funcionário por id inválido
+    Dado que existe um endpoint com métodos HTTP definidos
+    E que a API está disponível
+    Quando envio uma requisição GET utilizando um id inexistente
+    Então a API deve retornar o código HTTP 404 Not Found
+    E não deve retornar nenhum JSON
+```
+
+---
+
+## CT-API-0 — Requisição com método não permitido
 
 **Funcionalidade:** API REST  
 **Critérios de aceite:** CA16, CA18  
@@ -431,34 +485,7 @@ Funcionalidade: Validação de métodos HTTP
 
 ---
 
-## CT-API-03 — Comparar cadastro entre interface e API
-
-**Funcionalidade:** API REST / Cadastro de Funcionários  
-**Critério de aceite:** CA19  
-**Prioridade:** Alta  
-**Tipo:** Positivo  
-
-**Pré-condições:**
-- Aplicação web e API disponíveis.
-- Endpoint de consulta identificado.
-- Massa de dados válidos preparada.
-- CPF não cadastrado anteriormente.
-
-```gherkin
-Funcionalidade: Consistência entre interface e API
-
-  Cenário: Consultar pela API funcionário cadastrado na interface
-    Dado que estou na página de cadastro de funcionários
-    E possuo dados válidos com CPF ainda não cadastrado
-    Quando realizo o cadastro pela interface
-    E consulto o funcionário pela API
-    Então a API deve retornar o registro cadastrado
-    E os dados retornados devem corresponder aos informados na interface
-```
-
----
-
-## CT-API-04 — Verificar acesso não autorizado
+## CT-API-0 — Verificar acesso não autorizado
 
 **Funcionalidade:** API REST / Segurança  
 **Critério de aceite:** CA20  
