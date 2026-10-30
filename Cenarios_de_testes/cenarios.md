@@ -459,64 +459,51 @@ Funcionalidade: Validação de consulta por id inexistente
 
 ---
 
-## CT-API-0 — Requisição com método não permitido
+## CT-API-04 — Cadastrar funcionário com dados válidos
 
 **Funcionalidade:** API REST  
-**Critérios de aceite:** CA16, CA18  
-**Prioridade:** Média  
-**Tipo:** Negativo  
+**Critérios de aceite:** CA10
+**Prioridade:** Alta
+**Tipo:** Positivo  
 
 **Pré-condições:**
-- API REST disponível e acessível.
-- Endpoint existente identificado.
-- Métodos HTTP permitidos conhecidos.
-- Método não permitido definido.
-- Credenciais válidas, quando exigidas.
+- API REST disponível e acessível
+- Endpoint existente identificado
+- Método POST permitido definido
 
 ```gherkin
-Funcionalidade: Validação de métodos HTTP
+Funcionalidade: Cadastrar funcionários
 
-  Cenário: Utilizar método HTTP não permitido
+  Cenário: Cadastro de funcionários com dados válidos
     Dado que existe um endpoint com métodos HTTP definidos
-    Quando envio uma requisição utilizando um método não permitido
-    Então a API deve rejeitar a operação
-    E deve retornar o código HTTP previsto no contrato
+    Quando envio uma requisição POST preenchendo os campos com dados válidos
+    Então a API deve cadastrar funcionário com sucesso
+    E deve apresentar o funcionário cadastrado
 ```
 
 ---
 
-## CT-API-0 — Verificar acesso não autorizado
+## CT-API-05 — Cadastrar funcionário com campos vazios
 
-**Funcionalidade:** API REST / Segurança  
-**Critério de aceite:** CA20  
+**Funcionalidade:** Cadastro de funcionários
+**Critério de aceite:** CA08, CA15
 **Prioridade:** Alta  
 **Tipo:** Negativo  
 
 **Pré-condições:**
-- API REST disponível.
-- Endpoint de acesso protegido identificado, se existir.
-- Regras de autenticação ou autorização conhecidas.
-- Ambiente de teste autorizado para execução.
+- API REST disponível e acessível
+- Endpoint existente identificado
+- Método POST permitido definido
 
 ```gherkin
-Funcionalidade: Segurança de acesso à API
+Funcionalidade: Validação de campos JSON
 
-  Cenário: Impedir acesso não autorizado a recurso protegido
-    Dado que existe um endpoint protegido por autenticação ou autorização
-    Quando envio uma requisição sem as credenciais ou permissões necessárias
-    Então a API deve impedir o acesso ao recurso
-    E deve retornar uma resposta compatível com a regra de segurança
-    E não deve expor dados pessoais protegidos
+  Cenário: Impedir cadastro de funcionários com campo obrigatórios vazios
+    Dado que acessei a API
+    Quando envio uma requisição com os campos obrigatórios ausentes 
+    Então a API deve rejeitar o cadastro
+    E deve retornar mensagens de erro
+    E deve apresentar onde o erro se encontra
 ```
 
 ---
-
-# Observações
-
-- Os cenários deverão ser revisados conforme as regras de negócio identificadas.
-- As mensagens de erro exatas somente serão exigidas quando previstas nos requisitos.
-- Os cenários de CPF duplicado, exclusão, validação de CA e autorização dependem da confirmação das respectivas regras.
-- A indisponibilidade de navegação na listagem deverá ser documentada caso impeça a execução de cenários.
-- Os resultados e as evidências serão registrados no relatório de execução.
-- Os defeitos encontrados serão documentados separadamente.
-- A automação será priorizada conforme criticidade e viabilidade técnica.
