@@ -69,10 +69,10 @@ Funcionalidade: Cadastro de funcionários
 **Tipo:** Negativo  
 
 **Pré-condições:**
-- Aplicação disponível e acessível.
-- Formulário de cadastro disponível.
-- Funcionário previamente cadastrado com CPF conhecido.
-- Regra de unicidade do CPF confirmada.
+- Aplicação disponível e acessível
+- Formulário de cadastro disponível
+- Funcionário previamente cadastrado com CPF conhecido
+- Regra de unicidade do CPF confirmada
 
 ```gherkin
 Funcionalidade: Cadastro de funcionários
@@ -405,7 +405,7 @@ Funcionalidade: Consulta de funcionários via API
 
 ---
 
-## CT-API-02 — Consultar funcionário por id
+## CT-API-02 — Consultar funcionário existente
 
 **Funcionalidade:** API REST  
 **Critérios de aceite:** CA19 
@@ -483,7 +483,7 @@ Funcionalidade: Cadastrar funcionários
 
 ---
 
-## CT-API-05 — Cadastrar funcionário com campos vazios
+## CT-API-05 — Cadastrar funcionário com campos ausentes
 
 **Funcionalidade:** Cadastro de funcionários
 **Critério de aceite:** CA08, CA15
@@ -507,3 +507,157 @@ Funcionalidade: Validação de campos JSON
 ```
 
 ---
+
+## CT-API-06 — Cadastrar funcionário com CPF duplicado
+
+**Funcionalidade:** Cadastro de funcionários
+**Critério de aceite:** CA10, CA15
+**Prioridade:** Alta  
+**Tipo:** Negativo  
+
+**Pré-condições:**
+- API REST disponível e acessível
+- Endpoint existente identificado
+- Método POST permitido definido
+- Funcionário previamente cadastrado com CPF conhecido
+- 
+```gherkin
+Funcionalidade: Validação de unicidade do CPF
+
+  Cenário: Impedir cadastro de funcionário com CPF já existente
+    Dado que existe um funcionário cadastrado com determinado CPF
+    Quando envio uma requisição preenchendo os campos com dados válidos
+    E informo CPF já cadastrado
+    Então a API deve rejeitar o cadastro
+    E deve retornar mensagens de erro
+    E deve apresentar onde o erro se encontra
+```
+---
+
+## CT-API-06 — Cadastrar funcionário com CPF duplicado
+
+**Funcionalidade:** Cadastro de funcionários
+**Critério de aceite:** CA10, CA15
+**Prioridade:** Alta  
+**Tipo:** Negativo  
+
+**Pré-condições:**
+- API REST disponível e acessível
+- Endpoint existente identificado
+- Método POST permitido definido
+- Funcionário previamente cadastrado com CPF conhecido
+- 
+```gherkin
+Funcionalidade: Validação de unicidade do CPF
+
+  Cenário: Impedir cadastro de funcionário com CPF já existente
+    Dado que existe um funcionário cadastrado com determinado CPF
+    Quando envio uma requisição preenchendo os campos com dados válidos
+    E informo CPF já cadastrado
+    Então a API deve rejeitar o cadastro
+    E deve retornar mensagens de erro
+    E deve apresentar onde o erro se encontra
+```
+
+---
+
+## CT-API-07 — Cadastrar funcionário com dados inválidos
+
+**Funcionalidade:** Cadastro de funcionários
+**Critério de aceite:** CA10, CA15
+**Prioridade:** Alta  
+**Tipo:** Negativo  
+
+**Pré-condições:**
+- API REST disponível e acessível
+- Endpoint existente identificado
+- Método POST permitido definido
+
+```gherkin
+Funcionalidade: Validação de campos obrigatórios
+
+  Cenário: Impedir cadastro de funcionário com dados inválidos
+    Dado que acessei a API 
+    Quando envio uma requisição preenchendo os campos com dados inválidos
+    Então a API deve rejeitar o cadastro
+    E deve retornar mensagens de erro
+    E deve apresentar onde o erro se encontra
+```
+
+---
+
+## CT-API-08 — Atualizar dados do funcionário
+
+**Funcionalidade:** Cadastro de funcionários
+**Critério de aceite:** CA05, CA06
+**Prioridade:** Alta  
+**Tipo:** Positivo  
+
+**Pré-condições:**
+- API REST disponível e acessível
+- Endpoint existente identificado
+- Método PUT permitido definido
+- Possuir ao menos 1 funcionários cadastrado
+
+```gherkin
+Funcionalidade: Validação de atualização de dados
+
+  Cenário: Atualizar informações do funcionário cadastrado
+    Dado que acessei a API 
+    Quando envio uma requisição preenchendo os campos com dados inválidos
+    Então a API deve aceitar a atualização
+    E deve retornar resposta de sucesso
+    E deve retornar os dados atualizados
+```
+
+---
+
+## CT-API-09 — Atualizar um único dado do funcionário
+
+**Funcionalidade:** Cadastro de funcionários
+**Critério de aceite:** CA05, CA06
+**Prioridade:** Alta  
+**Tipo:** Positivo  
+
+**Pré-condições:**
+- API REST disponível e acessível
+- Endpoint existente identificado
+- Método PATCH permitido definido
+- Possuir ao menos 1 funcionários cadastrado
+
+```gherkin
+Funcionalidade: Validação de atualização de campo 
+
+  Cenário: Atualizar informação do funcionário
+    Dado que acessei a API 
+    Quando envio uma requisição preenchendo o campo que desejo atualizar
+    Então a API deve aceitar a atualização
+    E deve retornar resposta de sucesso
+    E deve retornar o campo com o dado atualizado
+```
+
+---
+
+## CT-API-10 — Deletar usuário cadastrado
+
+**Funcionalidade:** Cadastro de funcionários
+**Critério de aceite:** CA07
+**Prioridade:** Média 
+**Tipo:** Positivo  
+
+**Pré-condições:**
+- API REST disponível e acessível
+- Endpoint existente identificado
+- Método DELETE permitido definido
+- Possuir ao menos 1 funcionários cadastrado
+
+```gherkin
+Funcionalidade: Validação de exclusão do funcionário cadastrado
+
+  Cenário: Deletar funcionário do sistema
+    Dado que acessei a API 
+    Quando envio uma requisição informando id do usuário que desejo excluir
+    Então a API deve deletta
+    E deve retornar resposta de sucesso
+    E deve retornar o cadastros com seus dados excluídos
+```
