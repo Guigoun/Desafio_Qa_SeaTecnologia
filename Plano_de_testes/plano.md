@@ -61,7 +61,7 @@ Os testes buscarão verificar o atendimento aos requisitos e às regras de negó
 
 ### 2.2. Fora do escopo
 
-- Testes extensivos de carga, desempenho e estresse.
+- Testes de carga, desempenho e estresse.
 - Testes de segurança aprofundados, como pentest completo e auditoria de infraestrutura.
 - Validação direta da estrutura e integridade do banco de dados.
 - Testes de infraestrutura e disponibilidade em produção.
@@ -313,26 +313,7 @@ Será mantido um diário de uma página descrevendo:
 | Instabilidade da interface | Falhas na automação | Priorizar fluxos estáveis e registrar limitações |
 | Dados preexistentes inconsistentes | Dificuldade na interpretação dos resultados | Utilizar dados controlados e registrar observações |
 
-### 10.2. Premissas e dúvidas a validar
-
-Durante a exploração, deverão ser investigadas as seguintes questões:
-
-- O CPF deve ser único para todos os funcionários, incluindo inativos?
-- Quais campos são efetivamente obrigatórios?
-- Quais regras de validação se aplicam ao RG e à data de nascimento?
-- De acordo om os cargos sugeridos e regra de negócio deveria manter opção de não usar EPI?
-- Existe quantidade máxima de EPIs ou atividades por funcionário?
-- Como o número do CA é validado?
-- Quais formatos e tamanhos de arquivo são aceitos para o ASO?
-- A exclusão de funcionário é física ou lógica?
-- Quais operações exigem autenticação ou autorização?
-- Existem diferenças entre as regras aplicadas na interface e na API?
-- Qual a regra de contrato da API sobre os dados do JSON?
-- Existe alguma regra para autenticação e autorização da API?
-
-As respostas serão registradas conforme forem identificadas. Comportamentos não documentados não serão automaticamente classificados como defeitos sem análise do contexto e das regras aplicáveis.
-
-## 11. Entregáveis
+## 10. Entregáveis
 
 Ao final da execução, serão disponibilizados:
 
