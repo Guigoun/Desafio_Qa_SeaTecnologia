@@ -136,3 +136,41 @@ Também pude refletir sobre a necessidade de executar determinados testes explor
 A IA contribuiu principalmente com explicações, sugestões de estrutura, geração de dados de teste e revisões. Entretanto, participei diretamente da elaboração dos documentos, analisei as sugestões recebidas e tomei as decisões sobre quais testes executar, como registrar os resultados e quais ajustes aplicar.
 
 Considero que o uso da IA neste dia contribuiu para meu desenvolvimento técnico, ajudando a compreender melhor as atividades de um Analista de Testes e a produzir uma documentação mais organizada e consistente.
+
+
+## Dia 3 — Finalização dos relatórios e início dos testes de API
+
+No terceiro dia do desafio, utilizei a inteligência artificial como ferramenta de apoio para finalizar os relatórios de execução dos testes de interface e os registros de bugs identificados durante as validações.
+
+A IA auxiliou principalmente na estruturação dos documentos, na organização das informações e na revisão da linguagem técnica, buscando tornar os registros mais claros, objetivos e padronizados.
+
+Durante essa etapa, utilizei a IA para:
+
+- Auxiliar na estruturação e padronização dos relatórios de execução e de bugs.
+- Revisar a linguagem técnica utilizada na descrição dos resultados esperados, resultados obtidos e comportamentos observados.
+- Organizar as informações para facilitar a rastreabilidade entre cenários de teste, execuções, evidências e defeitos identificados.
+- Apoiar a elaboração da estrutura dos relatórios referentes aos testes de API REST.
+- Esclarecer dúvidas sobre contratos de API, códigos de status HTTP, validação de dados e comportamento esperado dos endpoints.
+- Discutir possíveis defeitos encontrados durante os testes de API, diferenciando comportamentos inadequados de situações que dependiam de regras de negócio ou especificações não fornecidas.
+
+As análises sobre os comportamentos observados foram realizadas considerando os resultados obtidos durante os testes, utilizando a IA para apoiar a interpretação técnica e a documentação.
+
+---
+
+## Dia 4 — Apoio à automação de testes com Robot Framework
+
+No quarto dia do desafio, utilizei a inteligência artificial como ferramenta de apoio ao desenvolvimento da automação dos testes de interface utilizando Robot Framework e SeleniumLibrary.
+
+O principal auxílio ocorreu na construção e correção de localizadores XPath, especialmente em situações nas quais a estrutura HTML e os comportamentos da aplicação dificultavam a identificação e a interação com determinados elementos.
+
+Também solicitei apoio para organizar a estrutura de pastas e arquivos do projeto de automação, utilizando como referência o padrão Page Object Model (POM), com o objetivo de separar os cenários de teste, as keywords e os recursos compartilhados.
+
+Durante essa etapa, utilizei a IA para:
+
+- Auxiliar na identificação e elaboração de localizadores XPath a partir da estrutura HTML dos elementos.
+- Investigar erros relacionados à localização e à interação com componentes da interface.
+- Esclarecer dúvidas sobre a sintaxe e o funcionamento de keywords do Robot Framework.
+- Apoiar a organização do projeto de automação com base no padrão Page Object Model (POM).
+- Auxiliar na implementação e revisão de validações automatizadas, considerando as limitações identificadas na aplicação.
+
+A IA foi utilizada como recurso de consulta e suporte técnico durante o desenvolvimento. A execução dos testes, a análise dos resultados e a avaliação das soluções propostas foram realizadas por mim, com base no comportamento observado na aplicação.
