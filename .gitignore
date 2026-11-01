@@ -1,0 +1,9 @@
+# Ambiente virtual Python
+.venv/
+
+# Cache do Python
+__pycache__/
+*.pyc
+
+# Resultados do Robot Framework
+Automacao/results/
