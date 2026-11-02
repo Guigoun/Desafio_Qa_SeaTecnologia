@@ -9,7 +9,7 @@
 
 # Cadastro de Funcionários
 
-## CT-01 — Cadastro de funcionário com dados válidos
+## CT-IT-01 — Cadastro de funcionário com dados válidos
 
 **Funcionalidade:** Cadastro de Funcionários  
 **Critérios de aceite:** CA08, CA09, CA20
@@ -37,7 +37,7 @@ Funcionalidade: Cadastro de funcionários
 
 ---
 
-## CT-02 — Cadastro com campos obrigatórios vazios
+## CT-IT-02 — Cadastro com campos obrigatórios vazios
 
 **Funcionalidade:** Cadastro de Funcionários  
 **Critérios de aceite:** CA08, CA15  
@@ -61,7 +61,7 @@ Funcionalidade: Cadastro de funcionários
 
 ---
 
-## CT-03 — Cadastro com CPF duplicado
+## CT-IT-03 — Cadastro com CPF duplicado
 
 **Funcionalidade:** Cadastro de Funcionários  
 **Critério de aceite:** CA10  
@@ -89,7 +89,7 @@ Funcionalidade: Cadastro de funcionários
 
 ---
 
-## CT-04 — Associação de múltiplos EPIs
+## CT-IT-04 — Associação de múltiplos EPIs
 
 **Funcionalidade:** Cadastro de Funcionários  
 **Critérios de aceite:** CA12  
@@ -116,7 +116,7 @@ Funcionalidade: Associação de EPIs
 
 ---
 
-## CT-05 — Adicionar outra atividade para um funcionário
+## CT-IT-05 — Adicionar outra atividade para um funcionário
 
 **Funcionalidade:** Cadastro de Funcionários  
 **Critérios de aceite:** CA11  
@@ -142,7 +142,7 @@ Funcionalidade: Associação de EPIs
 
 ---
 
-## CT-06 — Anexar ASO opcional no cadastro
+## CT-IT-06 — Anexar ASO opcional no cadastro
 
 **Funcionalidade:** Cadastro de Funcionários  
 **Critério de aceite:** CA14  
@@ -169,7 +169,7 @@ Funcionalidade: Anexo de ASO
 
 ---
 
-## CT-07 — Cadastro com dados inválidos
+## CT-IT-07 — Cadastro com dados inválidos
 
 **Funcionalidade:** Cadastro de Funcionários  
 **Critérios de aceite:** CA09, CA15  
@@ -197,7 +197,7 @@ Funcionalidade: Validação de dados cadastrais
 
 # Listagem de Funcionários
 
-## CT-08 — Listagem de funcionários cadastrados
+## CT-IT-08 — Listagem de funcionários cadastrados
 
 **Funcionalidade:** Listagem de funcionários  
 **Critério de aceite:** CA01  
@@ -220,7 +220,7 @@ Funcionalidade: Listagem de funcionários
 
 ---
 
-## CT-09 — Filtragem de funcionários ativos
+## CT-IT-09 — Filtragem de funcionários ativos
 
 **Funcionalidade:** Listagem de funcionários  
 **Critério de aceite:** CA02  
@@ -245,7 +245,7 @@ Funcionalidade: Filtragem de funcionários
 
 ---
 
-## CT-10 — Alterar situação do funcionário
+## CT-IT-10 — Alterar situação do funcionário
 
 **Funcionalidade:** Listagem de funcionários  
 **Critério de aceite:** CA06  
@@ -271,7 +271,7 @@ Funcionalidade: Situação cadastral
 
 ---
 
-## CT-11 — Editar funcionário
+## CT-IT-11 — Editar funcionário
 
 **Funcionalidade:** Listagem de funcionários  
 **Critério de aceite:** CA05  
@@ -298,7 +298,7 @@ Funcionalidade: Edição de funcionários
 
 ---
 
-## CT-12 — Excluir funcionário
+## CT-IT-12 — Excluir funcionário
 
 **Funcionalidade:** Listagem de funcionários  
 **Critério de aceite:** CA07  
@@ -326,7 +326,7 @@ Funcionalidade: Exclusão de funcionários
 
 ---
 
-## CT-13 — Consultar dados de funcionário
+## CT-IT-13 — Consultar dados de funcionário
 
 **Funcionalidade:** Listagem de funcionários  
 **Critério de aceite:** CA04  
@@ -351,7 +351,7 @@ Funcionalidade: Consulta de funcionários
 
 ---
 
-## CT-14 — Navegar pela listagem
+## CT-IT-14 — Navegar pela listagem
 
 **Funcionalidade:** Listagem de funcionários  
 **Critério de aceite:** CA03  
