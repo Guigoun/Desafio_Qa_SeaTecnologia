@@ -175,39 +175,7 @@ O sistema não valida os campos obrigatórios, não exibe mensagens para dados i
 
 ---
 
-## BUG-IT-06 - Sistema não apresenta resposta ao tentar acionar ações do funcionário  
-**Execução:** EV-11
-**Cenário de teste relacionado:** CT-10, CT-11, CT-12, CT13  
-**Funcionalidade:** Listagem de funcionários  
-**Severidade:** Alta   
-**Prioridade:** Média
-**Ambiente:** Google Chrome  
-
-## 1. Pré-condições:
-  - Aplicação disponível e Acessível
-  - Possuir funcionários na lista
-
-## 2. Passos para reproduzir:
-
-  1. Acessar a aplicação
-  2. Clicar no botão com 3 pontinho no canto direito do cadastro do funcionários
-     
-## 3. Resultado esperado:
-
-O sistema deve abrir as seguintes opções de ação: Alterar situação, Editar, Visualizar, Excluir
-
-## 4. Resultado obtido
-
-O sistema não apresentou nenhuma resposta visual ou funcional, as ações não foram executadas e o usuário permaneceu na tela de listagem de funcionários
-
-## 5. Evidências
-**Evidência 08 — [Sistema cadastra funcionário com dados válidos]**
-
-![Evidência 08](../Evidencias/EV-14.mp4)
-
----
-
-## BUG-IT-07 - Navegação entre páginas da listagem de funcionários não funciona
+## BUG-IT-06 - Navegação entre páginas da listagem de funcionários não funciona como esperado
 **Execução:** EV-12
 **Cenário de teste relacionado:** CT-14
 **Funcionalidade:** Listagem de funcionários  
