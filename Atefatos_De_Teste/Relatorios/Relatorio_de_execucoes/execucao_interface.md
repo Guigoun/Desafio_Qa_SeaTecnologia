@@ -1,663 +1,425 @@
 
-# Evidência de Execução - EV-01
+# Relatório de Execuções de Testes — Interface
 
-## Informações do Teste
+## Evidência de Execução — EV-IT-01
 
-**ID:** CT-01
-**Cenário:**  Cadastrar funcionário com dados válidos  
-**Data da execução:**  28/10/2026  
-**Ambiente:**  Homologação  
-**Navegador:**  Chrome  
-**Status:** Aprovado   
+### Informações do Teste
 
----
+**ID do cenário:** CT-IT-01  
+**Cenário:** Cadastro de funcionário com dados válidos  
+**Data da execução:** 28/10/2026  
+**Ambiente:** Homologação  
+**Navegador:** Google Chrome  
+**Status:** Aprovado  
 
-## 1. Dados Utilizados
-- Situação: Inativo
+### 1. Dados Utilizados
+
+- Situação: Aativo
 - Nome: Teste
 - CPF: 00123456789
 - RG: 01234567
 - Sexo: Masculino
-- Data de Nascimento: 12/05/1990
-- Cargo: Cargo 01
-- Atividade: Ativid 1
-- EPI: Capacete de Segurança
-- CA: 123456
+- Data de nascimento: 12/05/1990
+- Cargo: Cargo 02
+- EPI: Trabalhador não utiliza EPI
 - ASO: Não anexado
 
----
+### 2. Passos Executados
 
-## 2. Passos Executados
+1. Acessar o formulário de cadastro de funcionários.
+2. Preencher os campos obrigatórios com os dados válidos definidos para o teste.
+3. Marcar a opção "O trabalhador não usa EPI".
+4. Clicar no botão "Salvar".
+5. Verificar a apresentação do funcionário na listagem.
+6. Consultar os dados do funcionário cadastrado pela API.
 
-1. Acesse o formulário de cadastro
-2. Preencha os campos obrigatórios com os dados válidos fornecidos
-3. Clique no botão "Salvar"
+### 3. Resultado Esperado
 
----
+O sistema deve concluir o cadastro do funcionário com sucesso, apresentando o registro na listagem e disponibilizando seus dados corretamente na API.
 
-## 3. Resultado Esperado
+As informações retornadas devem corresponder aos valores informados durante o cadastro.
 
-O sistema deve cadastrar o funcionário com sucesso e deve ser exibido na lista 
+### 4. Resultado Obtido
 
----
+O sistema concluiu o cadastro do funcionário com sucesso e apresentou o registro na listagem.
 
-## 4. Resultado Obtido
+Entretanto, durante a consulta à API, foram identificados os seguintes valores:
 
-O sistema cadastra o funcionário com sucesso e é exibido na lista
+- `usesEpi`: `true`
+- `caNumber`: `""`
 
----
+O valor retornado no campo `usesEpi` não corresponde à opção "O trabalhador não usa EPI", selecionada durante o cadastro.
 
-## 5. Evidências
+### 5. Evidências
 
-**Evidência 01 — [Preenchimento dos campos obrigatórios com dados válidos fornecidos]**
+**Evidência 01 — Cadastro de funcionário com dados válidos e verificação das informações registradas**
 
-![Evidência 01](../Evidencias/EV-01.png)
-
-**Evidência 02 — [Payload contendo informações de cadastro com dados válidos]**
-
-![Evidência 02](../Evidencias/EV-02.png)
-
----
-
-## 6. Observações
-
-A página de listagem não possui um scroll ou um campo para buscar funcionários cadastrados,
-por isso a única evidência viável utilizada foi o payload da API
+[Evidência 01](../../Evidencias/EV-01.mp4)
 
 ---
 
-# Evidência de Execução — EV-02
+## Evidência de Execução — EV-IT-02
 
-## Informações do Teste
+### Informações do Teste
 
-**ID:** CT-02  
-**Cenário:**  Cadastro com campos obrigatórios vazios
-**Data da execução:**  28/10/2026
-**Ambiente:**  Homologação
-**Navegador:**  Chrome
-**Status:** Aprovado   
+**ID do cenário:** CT-IT-02  
+**Cenário:** Cadastro com campos obrigatórios vazios  
+**Data da execução:** 28/10/2026  
+**Ambiente:** Homologação  
+**Navegador:** Google Chrome  
+**Status:** Aprovado  
 
----
+### 1. Dados Utilizados
 
-## 1. Dados Utilizados
+- Campos obrigatórios: Não preenchidos.
 
-- Nenhum -> Campos em branco
+### 2. Passos Executados
 
----
+1. Acessar o formulário de cadastro de funcionários.
+2. Manter os campos obrigatórios sem preenchimento.
+3. Clicar no botão "Salvar".
+4. Verificar o comportamento do sistema e as mensagens de validação apresentadas.
 
-## 2. Passos Executados
+### 3. Resultado Esperado
 
-1. Acesse o formulário de cadastro
-2. Deixe os campos obrigatórios em branco
-3. Clique no botão "Salvar"
+O sistema deve impedir a conclusão do cadastro e apresentar a mensagem de validação "Preencha este campo." para indicar a necessidade de preenchimento dos campos obrigatórios.
 
----
+### 4. Resultado Obtido
 
-## 3. Resultado Esperado
+O sistema impediu a conclusão do cadastro e apresentou uma mensagem de validação solicitando o preenchimento do campo obrigatório.
 
-O sistema deve impedir o cadastro do funcionário e apresentar a mensagem "Preencha este campo."
+### 5. Evidências
 
+**Evidência 02 — Validação de campos obrigatórios não preenchidos**
 
----
-
-## 4. Resultado Obtido
-
-O sistema impede o cadastro e exibe a mensagem para preenchimento do campo obrigatório
+[Evidência 02](../../Evidencias/EV-02.mp4)
 
 ---
 
-## 5. Evidências
+## Evidência de Execução — EV-IT-03
 
-**Evidência 03 — [Campos obrigatórios em branco]**
+### Informações do Teste
 
-![Evidência 03](../Evidencias/EV-03.png)
+**ID do cenário:** CT-IT-03  
+**Cenário:** Cadastro de funcionário com CPF duplicado  
+**Data da execução:** 28/10/2026  
+**Ambiente:** Homologação  
+**Navegador:** Google Chrome  
+**Status:** Reprovado  
 
----
+### 1. Dados Utilizados
 
-
-# Evidência de Execução — EV-03
-
-## Informações do Teste
-
-**ID:** CT-03 
-**Cenário:**  Cadastro com CPF duplicado
-**Data da execução:**  28/10/2026
-**Ambiente:**  Homologação
-**Navegador:**  Chrome
-**Status:** Reprovado
-
----
-
-## 1. Dados Utilizados
-- Situação: Inativo
-- nome: Lucas Ferreira Teste
-- CPF: 121.212.412-31
+- Situação: Ativo
+- Nome: Lucas Ferreira Teste
+- CPF: 00123456789
 - RG: 123456
 - Sexo: Masculino
-- Data de Nascimento: 12/05/1990
+- Data de nascimento: 12/05/1990
 - Cargo: Cargo 01
-- Atividade: Ativid 1
+- Atividade: Atividade 01
 - EPI: Capacete de Segurança
 - CA: 123456
 - ASO: Não anexado
 
----
+### 2. Passos Executados
 
-## 2. Passos Executados
+1. Acessar o formulário de cadastro de funcionários.
+2. Informar no campo CPF um documento previamente cadastrado no sistema.
+3. Preencher os demais campos obrigatórios com os dados definidos para o teste.
+4. Clicar no botão "Salvar".
+5. Verificar se o sistema impede a duplicidade do cadastro.
+6. Consultar a listagem e os registros retornados pela API.
 
-1. Acesse o formulário de cadastro
-2. Preencha o campo CPF com um algum já cadastrado
-3. Preencha os demais campos obrigatórios
-4. Clique em "Salvar"
+### 3. Resultado Esperado
 
----
+O sistema deve impedir o cadastro de um funcionário com CPF já existente e apresentar uma mensagem informativa indicando que o documento está associado a outro registro.
 
-## 3. Resultado Esperado
+### 4. Resultado Obtido
 
-O sistema deve impedir o cadastro do funcionário e apresentar uma mensagem informando que o sistema já possui um funcionário com o CPF inserido cadastrado
+O sistema permitiu a criação de um novo funcionário utilizando um CPF previamente cadastrado.
 
----
+O registro foi apresentado na listagem e também pôde ser consultado pela API, que retornou o CPF duplicado.
 
-## 4. Resultado Obtido
+### 5. Evidências
 
-O sistema não valida o campo CPF e realiza o cadastro do funcionário
+**Evidência 03 — Cadastro de funcionário com CPF já existente**
 
----
-
-## 5. Evidências
-
-**Evidência 04 — [CPF de funcionário cadastrado]**
-
-![Evidência 04](../Evidencias/EV-04.png)
-
-**Evidência 05 — [Preenchimento do campo com cpf já cadastrado e dos demais campos obrigatórios]**
-
-![Evidência 05](../Evidencias/EV-05.png)
-
-**Evidência 06 — [Cadastro realizado com duplicidade do CPF]**
-
-![Evidência 06](../Evidencias/EV-06.png)
----
-
-## 6. Observações
-
-A página de listagem não possui um scroll ou um campo para buscar funcionários cadastrados,
-por isso a única evidência viável utilizada foi o payload da API
+[Evidência 03](../../Evidencias/EV-03.mp4)
 
 ---
 
-# Evidência de Execução — EV-04
+## Evidência de Execução — EV-IT-04
 
-## Informações do Teste
+### Informações do Teste
 
-**ID:** CT-04 
-**Cenário:**  Associação de múltplos EPIs à um funcionário
-**Data da execução:**  28/10/2026
-**Ambiente:**  Homologação
-**Navegador:**  Google Chrome
+**ID do cenário:** CT-IT-04  
+**Cenário:** Adicionar outra atividade ao funcionário  
+**Data da execução:** 28/10/2026  
+**Ambiente:** Homologação  
+**Navegador:** Google Chrome  
 **Status:** Reprovado  
 
----
+### 1. Dados Utilizados
 
-## 1. Dados Utilizados
-
-- Situação: Inativo  
-- nome: Mariana Costa Teste
+- Situação: Ativo
+- Nome: Mariana Costa Teste
 - CPF: 529.614.803-70
 - RG: 5938274
 - Sexo: Feminino
 - Data de nascimento: 22/07/1998
 - Cargo: Cargo 02
-- Atividade: Ativid 01
+- Atividade: Atividade 02
 - EPI: Capacete de Segurança
 - CA: 123456
 - ASO: Não anexado
 
+### 2. Passos Executados
+
+1. Acessar o formulário de cadastro de funcionários.
+2. Preencher os campos obrigatórios com dados válidos.
+3. Selecionar a atividade definida para o teste.
+4. Clicar no botão "Adicionar outra atividade".
+5. Verificar o comportamento da aplicação.
+
+### 3. Resultado Esperado
+
+O sistema deve permitir a inclusão de outra atividade no formulário de cadastro, mantendo a atividade anteriormente selecionada.
+
+Após a inclusão, a interface deve disponibilizar os campos necessários para associar uma nova atividade ao funcionário.
+
+### 4. Resultado Obtido
+
+Ao acionar a opção "Adicionar outra atividade", o sistema concluiu o cadastro do funcionário, mantendo apenas a primeira atividade atribuída.
+
+Não foi disponibilizada a inclusão de uma nova atividade conforme o comportamento esperado.
+
+### 5. Evidências
+
+**Evidência 04 — Cadastro concluído sem permitir a inclusão de outra atividade**
+
+[Evidência 04](../../Evidencias/EV-04.mp4)
+
 ---
 
-## 2. Passos Executados
+## Evidência de Execução — EV-IT-05
 
-1. Acesse o formulário de cadastro
-2. Preencha os campos com dádos válidos
-3. Preecha os campoo da sessão de EPI com dados válidos
-4. Clique em "Adicionar EPI"
+### Informações do Teste
 
----
-
-## 3. Resultado Esperado
-O sistema deve associar o EPI ao funcionário e exibi-lo na interface
-
----
-
-## 4. Resultado Obtido
-O sistema não associa o EPI ao funcionário não o exibindo-o na interface
-
----
-
-## 5. Evidências
-
-**Evidência 07 — [Botão para "Adicionar EPI Inativo"]**
-
-![Evidência 07](../Evidencias/EV-07.mp4)
-
----
-
-# Evidência de Execução — EV-05
-
-## Informações do Teste
-**ID:** CT-05
-**Cenário:**  Adicionar outra atividade à um funcionário  
-**Data da execução:**  28/10/2026  
-**Ambiente:**  Homologação  
-**Navegador:**  Google Chrome  
+**ID do cenário:** CT-IT-05  
+**Cenário:** Adicionar EPI ao funcionário  
+**Data da execução:** 28/10/2026  
+**Ambiente:** Homologação  
+**Navegador:** Google Chrome  
 **Status:** Reprovado  
 
----
+### 1. Dados Utilizados
 
-## 1. Dados Utilizados
-
-- Situação: Inativo  
-- nome: Mariana Costa Teste
-- CPF: 529.614.803-70
+- Situação: Ativo
+- Nome: Mariana Costa Teste
+- CPF: 52961480370
 - RG: 5938274
 - Sexo: Feminino
 - Data de nascimento: 22/07/1998
 - Cargo: Cargo 02
-- Atividade: Ativid 01
+- Atividade: Atividade 03
 - EPI: Capacete de Segurança
 - CA: 123456
 - ASO: Não anexado
 
----
+### 2. Passos Executados
 
-## 2. Passos Executados
+1. Acessar o formulário de cadastro de funcionários.
+2. Preencher os campos obrigatórios com dados válidos.
+3. Preencher os campos da seção de EPI com os dados definidos para o teste.
+4. Clicar no botão "Adicionar EPI".
+5. Verificar se o equipamento foi incluído no formulário.
 
-1. Acesse o formulário de cadastro
-2. Preencha os campos com dádos válidos
-4. Clique em "Adicionar outra atividade"
+### 3. Resultado Esperado
 
----
+O sistema deve permitir a inclusão do EPI informado e apresentá-lo corretamente na interface, possibilitando sua associação ao funcionário.
 
-## 3. Resultado Esperado
+### 4. Resultado Obtido
 
-O sistema exibir a nova atividade adicionada ao funcionário
+O botão "Adicionar EPI" não executou a ação esperada, impedindo a inclusão do equipamento no formulário de cadastro.
 
----
+### 5. Evidências
 
-## 4. Resultado Obtido
+**Evidência 05 — Botão "Adicionar EPI" sem resposta funcional**
 
-O sistema não adiciona atividade ao funcionário e redireciona para Listagem de produtos
-
----
-
-## 5. Evidências
-
-**Evidência 08 — [Sistema não adiciona outra atividade]**
-
-![Evidência 08](../Evidencias/EV-08.mp4)
+[Evidência 05](../../Evidencias/EV-05.mp4)
 
 ---
 
-# Evidência de Execução — EV-06
+## Evidência de Execução — EV-IT-06
 
-## Informações do Teste
-**ID:** CT-06
-**Cenário:** Anexar ASO no cadastro do funcionário
-**Data da execução:**  28/10/2026
-**Ambiente:**  Homologação
-**Navegador:**  Google Chrome
-**Status:** Reprovado
+### Informações do Teste
 
----
-
-## 1. Dados Utilizados
-
-- Situação: Inativo  
-- nome: Mariana Costa Teste
-- CPF: 529.614.803-70
-- RG: 5938274
-- Sexo: Feminino
-- Data de nascimento: 22/07/1998
-- Cargo: Cargo 02
-- Atividade: Ativid 01
-- EPI: Capacete de Segurança
-- CA: 123456
-- ASO: Arquivo pdf
-
----
-
-## 2. Passos Executados
-
-1. Acesse o formulário de cadastro
-2. Preencha os campos com dádos válidos
-3. Clique no botão "Selecionar o arquivo"
-4. Anexe o arquivo desejado (ex: pdf, jpeg)
-5. Clique em salvar
-
----
-
-## 3. Resultado Esperado
-
-O sistema deve cadastrar o funcionário com sucesso e o ASO deve estar associado ao cadastro
-
----
-
-## 4. Resultado Obtido
-
-O sistema cadastra funcionário mas não vincula ASO em seus dados
-
----
-
-## 5. Evidências
-
-**Evidência 09 — [ASO não vinculado ao cadastro]**
-
-![Evidência 09](../Evidencias/EV-09.mp4)
-
-## 6. Observações
-
-A página de listagem não possui um scroll ou um campo para buscar funcionários cadastrados,
-por isso a única evidência viável utilizada foi o payload da API
-
----
-
-# Evidência de Execução — EV-07
-
-## Informações do Teste
-**ID:** CT-07
-**Cenário:** Cadastro com dados inválidos
-**Data da execução:**  28/10/2026
-**Ambiente:**  Homologação
-**Navegador:**  Google Chrome
-**Status:** Aprovado
-
----
-
-## 1. Dados Utilizados
-
-- Situação: Inativo  
-- nome: 123456!@#$%
-- CPF: 529@AC2#247
-- RG: 781OHUFI@#$
-- Sexo: Feminino
-- Data de nascimento: 22/07/1998
-- Cargo: Cargo 02
-- Atividade: Ativid 01
-- EPI: Capacete de Segurança
-- CA: mdaih!@#@!$
-- ASO: Não anexado
-
----
-
-## 2. Passos Executados
-
-1. Acesse o formulário de cadastro
-2. Preencha os campos com dádos válidos
-3. Clique no botão "Salvar"
-5. Clique em salvar
-
----
-
-## 3. Resultado Esperado
-
-O sistema deve impedir o cadastro do funcionário e exibir mensagens para dados inválidos do campos
-
----
-
-## 4. Resultado Obtido
-
-O sistema não valida os campos obrigatórios, não exibe mensagens para dados inválidos e cadastra o funcionário
-
----
-
-## 5. Evidências
-
-**Evidência 10 — [Sistema permite cadastro do funcionário com dados inválidos]**
-
-![Evidência 10](../Evidencias/EV-10.mp4)
-
-## 6. Observações
-
-A página de listagem não possui um scroll ou um campo para buscar funcionários cadastrados,
-por isso a única evidência viável utilizada foi o payload da API
-
----
-
-# Evidência de Execução — EV-08
-
-## Informações do Teste
-
-**Teste Exploratório**
-**Cenário:**  Marcar opção "O trabalhador não usa EPI"  
-**Data da execução:**  28/10/2026  
-**Ambiente:**  Homologação  
-**Navegador:**  Google Chrome  
+**ID do cenário:** CT-IT-07  
+**Cenário:** Anexar ASO ao cadastro do funcionário  
+**Data da execução:** 28/10/2026  
+**Ambiente:** Homologação  
+**Navegador:** Google Chrome  
 **Status:** Aprovado  
 
----
+### 1. Dados Utilizados
 
-## 1. Dados Utilizados
-
-- Situação: Inativo  
-- nome: Mariana Costa Teste
+- Situação: Ativo
+- Nome: Mariana Costa Teste 2
 - CPF: 529.614.803-70
 - RG: 5938274
 - Sexo: Feminino
 - Data de nascimento: 22/07/1998
-- Cargo: Cargo 02
-- Atividade: Ativid 01
-- EPI: Capacete de Segurança
-- CA: 123456
-- ASO: Não anexado
+- EPI: Trabalhador não utiliza EPI
+- ASO: Arquivo PDF
+
+### 2. Passos Executados
+
+1. Acessar o formulário de cadastro de funcionários.
+2. Preencher os campos obrigatórios com dados válidos.
+3. Clicar no botão "Selecionar o arquivo".
+4. Selecionar o arquivo utilizado como ASO.
+5. Verificar se o arquivo selecionado é apresentado no formulário.
+6. Clicar no botão "Salvar".
+7. Verificar a conclusão do cadastro.
+
+### 3. Resultado Esperado
+
+O sistema deve permitir a seleção e apresentação do arquivo ASO no formulário.
+
+Após o preenchimento dos demais campos necessários, o cadastro do funcionário deve ser concluído com sucesso.
+
+### 4. Resultado Obtido
+
+O sistema apresentou o arquivo ASO selecionado no formulário e concluiu o cadastro do funcionário com sucesso.
+
+### 5. Evidências
+
+**Evidência 06 — Seleção de ASO e conclusão do cadastro do funcionário**
+
+[Evidência 06](../../Evidencias/EV-06.mp4)
 
 ---
 
-## 2. Passos Executados
+## Evidência de Execução — EV-IT-07
 
-1. Acesse o formulário de cadastro
-2. Preencha os campos com dádos válidos
-3. Cique no botão "O trabalhador não usa EPI"
----
+### Informações do Teste
 
-## 3. Resultado Esperado
-
-O sistema deve cadastrar o funcionário e exibir em seus dados que não utiliza EPI
-
----
-
-## 4. Resultado Obtido
-
-O sistema cadastra o funcionário mas exibe que utiliza EPI
-
----
-
-## 5. Evidências
-
-**Evidência 11 — [Sistema vincula funcionário a uma EPI]**
-
-![Evidência 11](../Evidencias/EV-11.mp4)
-
-## 6. Observações
-
-A página de listagem não possui um scroll ou um campo para buscar funcionários cadastrados,
-por isso a única evidência viável utilizada foi o payload da API
-
----
-
-# Evidência de Execução — EV-09
-
-## Informações do Teste
-**ID:** CT-08
-**Cenário:**  Listagem de funcionários
-**Data da execução:**  29/10/2026  
-**Ambiente:**  Homologação  
-**Navegador:**  Microsoft Edge
-**Status:** Aprovado  
-
----
-
-## 1. Dados Utilizados
-
-- Nenhum dado utilizado
-
----
-
-## 2. Passos Executados
-
-1. Acessar a aplicação 
-2. Visualizar a lista dos funcionários cadastrados
-
----
-
-## 3. Resultado Esperado
-
-O sistema apresenta o registro dos funcionários cadastrados exibindo seus dados
-
----
-
-## 4. Resultado Obtido
-
-O sistema apresentou o registro dos funcionários cadastrados e exibiu seus dados
-
----
-
-## 5. Evidências
-
-**Evidência 12 — [Visualização da lista de funcionários cadastrados]**
-
-![Evidência 12](../Evidencias/EV-12.png)
-
----
-
-# Evidência de Execução — EV-10
-
-## Informações do Teste
-**ID:** CT-09
-**Cenário:**  Filtagem e exibição de funcionários ativos 
-**Data da execução:**  29/10/2026  
-**Ambiente:**  Homologação  
-**Navegador:**  Google Chrome
+**ID do cenário:** CT-IT-08  
+**Cenário:** Cadastro de funcionário com dados inválidos  
+**Data da execução:** 28/10/2026  
+**Ambiente:** Homologação  
+**Navegador:** Google Chrome  
 **Status:** Reprovado  
 
----
+### 1. Dados Utilizados
 
-## 1. Dados Utilizados
+- Situação: Inativo
+- Nome: `123456!@#$%`
+- CPF: `529@AC2#247`
+- RG: `781OHUFI@#$`
+- Sexo: Feminino
+- Data de nascimento: 22/07/1998
+- Cargo: Cargo 02
+- Atividade: Atividade 01
+- EPI: Capacete de Segurança
+- CA: `mdaih!@#@!$`
+- ASO: Não anexado
 
-- Nenhum dado utilizado
+### 2. Passos Executados
 
----
+1. Acessar o formulário de cadastro de funcionários.
+2. Preencher os campos com os dados inválidos definidos para o teste.
+3. Clicar no botão "Salvar".
+4. Verificar se o sistema impede a conclusão do cadastro.
+5. Verificar a apresentação de mensagens de validação nos campos preenchidos incorretamente.
 
-## 2. Passos Executados
+### 3. Resultado Esperado
 
-1. Acessar a aplicação 
-2. Clicar no botão "Ver apenas ativos"
-   
----
+O sistema deve validar os dados informados, impedir o cadastro quando os valores não atenderem às regras estabelecidas e apresentar mensagens de validação nos campos correspondentes.
 
-## 3. Resultado Esperado
+### 4. Resultado Obtido
 
-O sistema deve filtrar e apresentar os funcionários ativos
+O sistema não apresentou mensagens de validação para os dados inválidos informados e permitiu a conclusão do cadastro do funcionário.
 
----
+### 5. Evidências
 
-## 4. Resultado Obtido
+**Evidência 07 — Cadastro de funcionário permitido com dados inválidos**
 
-O sistema realiza a filtragem apresentando o funcionários ativos
-
----
-
-## 5. Evidências
-
-**Evidência 13 — [Visualização da lista de funcionários ativos no sistema]**
-
-![Evidência 13](../Evidencias/EV-13.mp4)
-
----
-
-# Evidência de Execução — EV-11
-
-## Informações do Teste
-**ID:** CT-10, CT-11, CT-12, CT-13
-**Cenário:**  Opção de Ações para alterar situação, editar, excluir e visualizar dados do funcionário
-**Data da execução:**  29/10/2026  
-**Ambiente:**  Homologação  
-**Navegador:**  Google Chrome
-**Status:** Reprovado
+[Evidência 07](../../Evidencias/EV-07.mp4)
 
 ---
 
-## 1. Dados Utilizados
+## Evidência de Execução — EV-IT-08
 
-- Nenhum dado utilizado
+### Informações do Teste
 
----
+**ID do cenário:** CT-IT-09  
+**Cenário:** Visualização de funcionários na listagem  
+**Data da execução:** 29/10/2026  
+**Ambiente:** Homologação  
+**Navegador:** Google Chrome  
+**Status:** Aprovado  
 
-## 2. Passos Executados
+### 1. Dados Utilizados
 
-1. Acesse a aplicação 
-2. Clicar nos três pontinhos no canto direito do cadastro apresentado
-   
----
+- Funcionários previamente cadastrados no sistema.
 
-## 3. Resultado Esperado
+### 2. Passos Executados
 
-O sistema deve abrir as seguintes opções de ação: Alterar situação, Editar, Visualizar, Excluir
+1. Acessar a aplicação.
+2. Navegar até a página de listagem de funcionários.
+3. Verificar a apresentação dos funcionários cadastrados e de seus respectivos dados.
 
----
+### 3. Resultado Esperado
 
-## 4. Resultado Obtido
-Ao tentar acionar as opções Alterar situação, Editar, Visualizar e Excluir, o sistema não apresentou nenhuma resposta visual ou funcional. As ações não foram executadas e o usuário permaneceu na tela de listagem de funcionários
+O sistema deve apresentar os registros dos funcionários cadastrados na listagem, exibindo os dados disponibilizados pela funcionalidade.
 
----
+### 4. Resultado Obtido
 
-## 5. Evidências
+O sistema apresentou os funcionários cadastrados na listagem, exibindo os respectivos dados.
 
-**Evidência 14 — [Botão de ações do funcionário inativo]**
+### 5. Evidências
 
-![Evidência 14](../Evidencias/EV-14.mp4)
+**Evidência 08 — Visualização da listagem de funcionários cadastrados**
 
----
-
-# Evidência de Execução — EV-12
-
-## Informações do Teste
-**ID:** CT-14
-**Cenário:**  Navegação pela lista de funcionários
-**Data da execução:**  29/10/2026  
-**Ambiente:**  Homologação  
-**Navegador:**  Google Chrome
-**Status:** Reprovado
+[Evidência 08](../../Evidencias/EV-08.mp4)
 
 ---
 
-## 1. Dados Utilizados
+## Evidência de Execução — EV-IT-09
 
-- Nenhum dado utilizado
+### Informações do Teste
 
----
+**ID do cenário:** CT-IT-10  
+**Cenário:** Filtragem e exibição de funcionários ativos  
+**Data da execução:** 29/10/2026  
+**Ambiente:** Homologação  
+**Navegador:** Google Chrome  
+**Status:** Aprovado  
 
-## 2. Passos Executados
+### 1. Dados Utilizados
 
-1. Acessar a listagem de funcionários
-2. Posicionar o cursor sobre a área da listagem
-3. Realizar a rolagem vertical para baixo
-4. Verificar se os demais registros ficam acessíveis
-5. Realizar a rolagem para cima
-   
----
+- Funcionários previamente cadastrados no sistema, incluindo registros com situação ativa.
 
-## 3. Resultado Esperado
-O sistema deve permitir a navegação vertical pela listagem, possibilitando a visualização dos registros disponíveis sem comprometer a apresentação das informações
+### 2. Passos Executados
 
----
+1. Acessar a aplicação.
+2. Navegar até a listagem de funcionários.
+3. Clicar no botão "Ver apenas ativos".
+4. Verificar os funcionários apresentados após a aplicação do filtro.
 
-## 4. Resultado Obtido  
-Ao realizar a rolagem vertical, a listagem não permite alcançar todos os registros, impossibilitando a visualização completa dos funcionários
----
+### 3. Resultado Esperado
 
-## 5. Evidências
+O sistema deve filtrar a listagem e apresentar apenas os funcionários com situação ativa, mantendo a exibição dos respectivos dados.
 
-**Evidência 15 — [Botão de ações do funcionário inativo]**
+### 4. Resultado Obtido
 
-![Evidência 15](../Evidencias/EV-15.mp4)
+O sistema aplicou o filtro e apresentou os funcionários com situação ativa, mantendo a exibição dos dados correspondentes.
+
+### 5. Evidências
+
+**Evidência 09 — Filtragem e visualização de funcionários ativos**
+
+[Evidência 09](../../Evidencias/EV-09.mp4)
+
 

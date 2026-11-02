@@ -45,9 +45,9 @@
 - **Resposta recebida:** A API retornou uma lista de funcionários em formato JSON, contendo informações cadastrais.
 - **Comportamento observado:** A requisição foi processada com sucesso, apresentando registros com os campos `isActive`, `id`, `name`, `gender`, `cpf`, `rg`, `birthday`, `role`, `activity`, `epi`, `usesEpi` e `caNumber`.
 
-**Evidência 16 — Retorno da lista de funcionários cadastrados em formato JSON**
+**Evidência 01 — Retorno da lista de funcionários cadastrados em formato JSON**
 
-[Evidência 16 — Vídeo](../Evidencias/EV-16.mp4)
+[Evidência 01 — Vídeo](../../Evidencias/EV-12.mp4)
 
 ### 6. Observações
 
@@ -97,19 +97,65 @@ Na evidência, foi identificado um registro com `"id": "1"`. Ainda não há info
 
 - **Status HTTP:** 200 OK.
 - **Resposta recebida:** A API retornou os dados cadastrais do funcionário consultado em formato JSON.
-- **Comportamento observado:** A requisição foi processada com sucesso, apresentando informações como `id`, `isActive`, `name`, `gender`, `cpf`, `birthday`, `rg`, `role`, `usesEpi` e `caNumber`.
+- **Comportamento observado:** A requisição foi processada com sucesso, apresentando os seguintes campos e seus dados `id`, `isActive`, `name`, `gender`, `cpf`, `birthday`, `rg`, `role`, `usesEpi` e `caNumber`.
 
-**Evidência 17 — Consulta do funcionário por ID**
+**Evidência 02 — Consulta do funcionário por ID**
 
-![Evidência 17](../Evidencias/EV-17.png)
-
-**Evidência 18 — Retorno dos dados do funcionário consultado**
-
-![Evidência 18](../Evidencias/EV-18.png)
+![Evidência 02](../../Evidencias/EV-13.mp4)
 
 ---
 
 ## Evidência de Execução — EV-API-03
+**Teste Exploratório**
+**ID:** CT-API-02  
+**Funcionalidade:** Consulta de funcionário inexistente por ID  
+**Data da execução:** 02/11/2026  
+**Endpoint:** https://analista-teste.seatecnologia.com.br/employees  
+**Método HTTP:** GET  
+**Ferramenta:** Postman  
+**Status:** Aprovado
+
+---
+
+### 1. Pré-condições
+
+- API REST disponível e acessível.
+- Endpoint de consulta identificado.
+- Método GET suportado.
+- Funcionário previamente cadastrado.
+
+### 2. Passos de execução
+
+1. Acessar o Postman.
+2. Selecionar o método GET.
+3. Informar o endpoint do funcionário desejado.
+4. Enviar a requisição.
+5. Verificar o status HTTP e os dados retornados.
+
+### 3. Dados utilizados
+
+**Endpoint:** `/employees/{id}`  
+**Método:** GET  
+**Body:** Não utilizado.
+
+### 4. Resultado esperado
+
+- **Status HTTP:** 404 Not found.  
+- **Resposta esperada:** A API deve retornar o status "404 Not found" e a mensagem de erro "Not found".  
+
+### 5. Resultado obtido
+
+- **Status HTTP:** 404 Not found.
+- **Resposta recebida:** A API retornou status "404 Not found" e a mensagem de erro "Not found".
+- **Comportamento observado:** A requisição foi processada com sucesso, não retornado status de sucesso possivel 200 OK e retornando JSON de funcionário fictício ou não solicitado.
+
+**Evidência 03 — Consulta do funcionário por ID**
+
+![Evidência 03](../../Evidencias/EV-14.mp4)
+
+---
+
+## Evidência de Execução — EV-API-04
 
 **ID:** CT-API-03  
 **Funcionalidade:** Cadastro de funcionários com dados válidos  
@@ -177,21 +223,14 @@ Na evidência, foi identificado um registro com `"id": "1"`. Ainda não há info
 - **Resposta recebida:** A API retornou uma resposta de sucesso em formato JSON, contendo informações cadastrais.
 - **Comportamento observado:** A requisição foi processada com sucesso, e o funcionário cadastrado foi localizado na consulta posterior.
 
-**Evidência 19 — Cadastro de funcionário com dados válidos**
+**Evidência 04 — Cadastro de funcionário com dados válidos**
 
-![Evidência 19](../Evidencias/EV-19.png)
+![Evidência 04](../../Evidencias/EV-15.mp4)
 
-**Evidência 20 — Resposta da API após o cadastro**
-
-![Evidência 20](../Evidencias/EV-20.png)
-
-**Evidência 21 — Consulta do funcionário cadastrado**
-
-![Evidência 21](../Evidencias/EV-21.png)
 
 ---
 
-## Evidência de Execução — EV-API-04
+## Evidência de Execução — EV-API-05
 
 **ID:** CT-API-04  
 **Funcionalidade:** Cadastro de funcionários com campos vazios  
@@ -258,21 +297,13 @@ Na evidência, foi identificado um registro com `"id": "1"`. Ainda não há info
 - **Resposta recebida:** A API retornou uma resposta de sucesso e criou o funcionário com campos vazios.
 - **Comportamento observado:** A requisição foi aceita, e o registro com campos vazios foi encontrado na consulta posterior.
 
-**Evidência 22 — Cadastro com campos vazios**
+**Evidência 05 — Cadastro com campos vazios**
 
-![Evidência 22](../Evidencias/EV-22.png)
-
-**Evidência 23 — Funcionário cadastrado**
-
-![Evidência 23](../Evidencias/EV-23.png)
-
-**Evidência 24 — Consulta do funcionário com campos vazios**
-
-![Evidência 24](../Evidencias/EV-24.png)
+![Evidência 05](../../Evidencias/EV-16.mp4)
 
 ---
 
-## Evidência de Execução — EV-API-05
+## Evidência de Execução — EV-API-06
 
 **ID:** CT-API-05  
 **Funcionalidade:** Cadastro de funcionário com CPF duplicado  
@@ -289,7 +320,7 @@ Na evidência, foi identificado um registro com `"id": "1"`. Ainda não há info
 - API REST disponível e acessível.
 - Endpoint de cadastro identificado.
 - Métodos POST e GET suportados.
-- Funcionário previamente cadastrado com CPF `704.183.625-80`.
+- Funcionário previamente cadastrado com CPF `12121241231` -> Referente ao funcionário "Sea Teste".
 
 ### 2. Passos de execução
 
@@ -316,7 +347,7 @@ Na evidência, foi identificado um registro com `"id": "1"`. Ainda não há info
       "isActive": false,
       "name": "Gojo satoru honrado",
       "gender": "masculino",
-      "cpf": "704.183.625-80",
+      "cpf": "12121241231",
       "birthDay": "1999-12-04",
       "rg": "6293612",
       "role": "Cargo 4",
@@ -340,21 +371,13 @@ Na evidência, foi identificado um registro com `"id": "1"`. Ainda não há info
 - **Resposta recebida:** A API retornou uma resposta de sucesso e os dados do funcionário criado.
 - **Comportamento observado:** A requisição foi aceita, permitindo cadastrar outro funcionário com CPF já existente.
 
-**Evidência 25 — Cadastro com CPF duplicado**
+**Evidência 06 — Cadastro com CPF duplicado**
 
-![Evidência 25](../Evidencias/EV-25.png)
-
-**Evidência 26 — Resposta da API após o cadastro**
-
-![Evidência 26](../Evidencias/EV-26.png)
-
-**Evidência 27 — Consulta do funcionário com CPF duplicado**
-
-![Evidência 27](../Evidencias/EV-27.png)
+![Evidência 06](../../Evidencias/EV-17.png)
 
 ---
 
-## Evidência de Execução — EV-API-06
+## Evidência de Execução — EV-API-07
 
 **ID:** CT-API-06  
 **Funcionalidade:** Cadastro de funcionários com dados inválidos  
@@ -391,7 +414,7 @@ Na evidência, foi identificado um registro com `"id": "1"`. Ainda não há info
 
 ```json
 {
-  "id": "123",
+  "id": "#$%¨&%",
   "state": {
     "employee": {
       "isActive": "FDFFSFSFSD",
@@ -421,21 +444,13 @@ Na evidência, foi identificado um registro com `"id": "1"`. Ainda não há info
 - **Resposta recebida:** A API retornou uma resposta de sucesso com o corpo JSON do registro.
 - **Comportamento observado:** A API aceitou os dados inválidos, realizou o cadastro e permitiu consultar o funcionário criado.
 
-**Evidência 28 — Cadastro com dados inválidos**
+**Evidência 07 — Cadastro com dados inválidos**
 
-![Evidência 28](../Evidencias/EV-28.png)
-
-**Evidência 29 — Funcionário criado com sucesso**
-
-![Evidência 29](../Evidencias/EV-29.png)
-
-**Evidência 30 — Consulta do funcionário com dados inválidos**
-
-![Evidência 30](../Evidencias/EV-30.png)
+![Evidência 07](../../Evidencias/EV-19.mp4)
 
 ---
 
-## Evidência de Execução — EV-API-07
+## Evidência de Execução — EV-API-08
 
 **ID:** CT-API-07  
 **Funcionalidade:** Atualização de funcionário por PUT  
@@ -499,17 +514,13 @@ Na evidência, foi identificado um registro com `"id": "1"`. Ainda não há info
 
 ### 5. Resultado obtido
 
-- **Status HTTP:** 200 OK (confirmar na evidência EV-31).
+- **Status HTTP:** 200 OK 
 - **Resposta recebida:** A API retornou uma resposta de sucesso contendo os dados da requisição.
 - **Comportamento observado:** A API atualizou o funcionário informado, e os dados atualizados foram identificados na consulta posterior.
 
-**Evidência 31 — Resposta da atualização por PUT**
+**Evidência 08 — Resposta da atualização por PUT**
 
-![Evidência 31](../Evidencias/EV-31.png)
-
-**Evidência 32 — Consulta do funcionário atualizado**
-
-![Evidência 32](../Evidencias/EV-32.png)
+![Evidência 08](../../Evidencias/EV-20.mp4)
 
 ### 6. Observações
 
@@ -517,7 +528,7 @@ O documento original apresentava `200 Created` como status obtido. É necessári
 
 ---
 
-## Evidência de Execução — EV-API-08
+## Evidência de Execução — EV-API-09
 
 **ID:** CT-API-08  
 **Funcionalidade:** Atualização parcial de funcionário por PATCH  
@@ -575,13 +586,9 @@ O documento original apresentava `200 Created` como status obtido. É necessári
 - **Resposta recebida:** A API retornou uma resposta de sucesso com o corpo JSON da requisição.
 - **Comportamento observado:** A API retornou o status esperado, porém apresentou comportamento de substituição dos dados do funcionário pelo conteúdo parcial enviado, em vez de atualizar somente o campo informado.
 
-**Evidência 33 — Requisição PATCH de atualização parcial**
+**Evidência 09 — Requisição PATCH de atualização parcial**
 
-![Evidência 33](../Evidencias/EV-33.png)
-
-**Evidência 34 — Resultado da atualização parcial**
-
-![Evidência 34](../Evidencias/EV-34.png)
+![Evidência 09](../../Evidencias/EV-21.mp4)
 
 ### 6. Observações
 
@@ -589,7 +596,7 @@ O documento original apresentava `200 Created` como status obtido. É necessári
 
 ---
 
-## Evidência de Execução — EV-API-09
+## Evidência de Execução — EV-API-10
 
 **ID:** CT-API-09  
 **Funcionalidade:** Exclusão de funcionário  
@@ -636,17 +643,13 @@ O documento original apresentava `200 Created` como status obtido. É necessári
 - **Resposta recebida:** A API retornou sucesso na exclusão e, posteriormente, uma resposta de recurso não encontrado.
 - **Comportamento observado:** O funcionário foi excluído, e a consulta posterior pelo ID retornou a resposta esperada.
 
-**Evidência 35 — Exclusão do funcionário**
+**Evidência 10 — Exclusão do funcionário**
 
-![Evidência 35](../Evidencias/EV-35.png)
-
-**Evidência 36 — Consulta do funcionário excluído**
-
-![Evidência 36](../Evidencias/EV-36.png)
+![Evidência 10](../../Evidencias/EV-22.mp4)
 
 ---
 
-## Evidência de Execução — EV-API-10
+## Evidência de Execução — EV-API-11
 
 **Tipo:** Teste exploratório  
 **Cenário associado:** Não aplicável  
@@ -680,7 +683,32 @@ O documento original apresentava `200 Created` como status obtido. É necessári
 
 **Endpoint:** `/employees`  
 **Método:** POST/GET  
-**Body/JSON:** JSON de cadastro contendo propriedades adicionais. Os valores exatos devem ser consultados na evidência da requisição.
+**Body/JSON:** 
+
+```json
+{
+  "id": "002",
+  "state": {
+    "employee": {
+      "isActive": true,
+      "esporte": "futebol",
+      "tênis": "nike",
+      "dedos": 5,
+      "verdadeiro": true,
+      "name": "Vanica Zogratis",
+      "gender": "feminino",
+      "cpf": "245.124.442-32",
+      "birthDay": "13/08/200",
+      "rg": "582073",
+      "role": "Cargo 2",
+      "usesEpi": true,
+      "activity": "Ativid 01",
+      "epi": "Luvas descartaveis",
+      "caNumber": "827444"
+    }
+  }
+}
+```
 
 ### 4. Resultado esperado
 
@@ -691,12 +719,12 @@ O documento original apresentava `200 Created` como status obtido. É necessári
 
 - **Status HTTP:** 201 Created.
 - **Resposta recebida:** A API retornou uma resposta de sucesso contendo os dados do registro criado.
-- **Comportamento observado:** A API aceitou a requisição, cadastrou o funcionário e armazenou as propriedades adicionais enviadas.
+- **Comportamento observado:** A API aceitou a requisição, cadastrou o funcionário e armazenou as propriedades adicionais enviadas: 
+  - "esporte": "futebol"
+  - "tênis": "nike"
+  - "dedos": 5
+  - "verdadeiro": true
 
-**Evidência 38 — Cadastro de funcionário com campos adicionais**
+**Evidência 11 — Cadastro de funcionário com campos adicionais**
 
-![Evidência 38](../Evidencias/EV-38.png)
-
-**Evidência 39 — Funcionário cadastrado com sucesso**
-
-![Evidência 39](../Evidencias/EV-39.png)
+![Evidência 11](../Evidencias/EV-23.mp4)

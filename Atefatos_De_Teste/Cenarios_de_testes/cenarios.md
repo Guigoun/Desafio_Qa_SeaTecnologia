@@ -89,7 +89,61 @@ Funcionalidade: Cadastro de funcionários
 
 ---
 
-## CT-IT-04 — Associação de múltiplos EPIs
+## CT-IT-04 — Adicionar mais de uma atividade para um funcionário
+
+**Funcionalidade:** Cadastro de Funcionários  
+**Critérios de aceite:** CA11  
+**Prioridade:** Média  
+**Tipo:** Positivo  
+
+**Pré-condições:**
+- Aplicação disponível e acessível.
+- Formulário de cadastro disponível.
+- Dados obrigatórios preparados.
+- Atividade e EPIs disponíveis para seleção.
+- Ter um EPI préviamente adicionado
+
+```gherkin
+Funcionalidade: Adicionar mais de uma atividade para um funcionário
+
+  Cenário: Adicionar outra atividade a um funcionário
+    Dado que estou no formulário de cadastro
+    E já tenho uma atividade associada à um funcionário
+    Quando seleciono a atividade desejada
+    E clico no botão "Adicionar outra atividade"
+    Então o sistema deve apresentar a atividade adicionada ao funcionário
+    E o botão "Adicionar outra atividade" deve permanecer disponível
+```
+
+---
+
+## CT-IT-05 — Adicionar 1 EPI para funcionário
+
+**Funcionalidade:** Cadastro de Funcionários  
+**Critérios de aceite:** CA12  
+**Prioridade:** Média  
+**Tipo:** Positivo  
+
+**Pré-condições:**
+- Aplicação disponível e acessível.
+- Formulário de cadastro disponível.
+- Dados obrigatórios preparados.
+- Atividade e EPIs disponíveis para seleção.
+
+```gherkin
+Funcionalidade: Associação de EPIs
+
+  Cenário: Adicionar múltiplos EPIs a um funcionário
+    Dado que estou no formulário de cadastro
+    E selecionei uma atividade
+    Quando seleciono um EPI informando o número do CA
+    E clico no botão "Adicionar EPI"
+    Então o sistema deve apresentar o EPI associado
+```
+
+---
+
+## CT-IT-06 — Adicionar de múltiplos EPIs
 
 **Funcionalidade:** Cadastro de Funcionários  
 **Critérios de aceite:** CA12  
@@ -111,38 +165,11 @@ Funcionalidade: Associação de EPIs
     Quando adiciono um EPI informando o número do CA
     E adiciono um segundo EPI informando o número do CA
     Então o sistema deve apresentar os dois EPIs associados
-    E deve permitir salvar os dados conforme as regras de negócio
 ```
 
 ---
 
-## CT-IT-05 — Adicionar outra atividade para um funcionário
-
-**Funcionalidade:** Cadastro de Funcionários  
-**Critérios de aceite:** CA11  
-**Prioridade:** Média  
-**Tipo:** Positivo  
-
-**Pré-condições:**
-- Aplicação disponível e acessível.
-- Formulário de cadastro disponível.
-- Dados obrigatórios preparados.
-- Atividade e EPIs disponíveis para seleção.
-
-```gherkin
-Funcionalidade: Associação de EPIs
-
-  Cenário: Adicionar outra atividade a um funcionário
-    Dado que estou no formulário de cadastro
-    E selecionei uma atividade
-    Quando clico no botão "Adicionar outra atividade"
-    Então o sistema deve apresentar a atividade adicionada ao funcionário
-    E o botão "Adicionar outra atividade" deve permanecer disponível
-```
-
----
-
-## CT-IT-06 — Anexar ASO opcional no cadastro
+## CT-IT-07 — Anexar ASO opcional no cadastro
 
 **Funcionalidade:** Cadastro de Funcionários  
 **Critério de aceite:** CA14  
@@ -169,7 +196,7 @@ Funcionalidade: Anexo de ASO
 
 ---
 
-## CT-IT-07 — Cadastro com dados inválidos
+## CT-IT-08 — Cadastro com dados inválidos
 
 **Funcionalidade:** Cadastro de Funcionários  
 **Critérios de aceite:** CA09, CA15  
@@ -197,7 +224,7 @@ Funcionalidade: Validação de dados cadastrais
 
 # Listagem de Funcionários
 
-## CT-IT-08 — Listagem de funcionários cadastrados
+## CT-IT-09 — Listagem de funcionários cadastrados
 
 **Funcionalidade:** Listagem de funcionários  
 **Critério de aceite:** CA01  
@@ -220,7 +247,7 @@ Funcionalidade: Listagem de funcionários
 
 ---
 
-## CT-IT-09 — Filtragem de funcionários ativos
+## CT-IT-10 — Filtragem de funcionários ativos
 
 **Funcionalidade:** Listagem de funcionários  
 **Critério de aceite:** CA02  
@@ -245,7 +272,7 @@ Funcionalidade: Filtragem de funcionários
 
 ---
 
-## CT-IT-10 — Navegar pela listagem
+## CT-IT-11 — Navegar pela listagem
 
 **Funcionalidade:** Listagem de funcionários  
 **Critério de aceite:** CA03  

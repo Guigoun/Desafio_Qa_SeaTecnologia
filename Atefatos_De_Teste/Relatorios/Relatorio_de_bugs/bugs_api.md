@@ -3,7 +3,7 @@
 
 ## BUG-01 — API permite cadastro de funcionários com campos vazios e nulos
 
-**Execução de teste relacionada:** EV-API-04  
+**Execução de teste relacionada:** EV-API-05  
 **Cenário de teste relacionado:** CT-API-04  
 **Funcionalidade:** Cadastro de Funcionários  
 **Severidade:** Alta  
@@ -65,23 +65,15 @@ O registro criado também foi encontrado na consulta posterior.
 
 ### 6. Evidências
 
-**Evidência 22 — Cadastro de funcionário com campos vazios**
+**Evidência 01 — Cadastro de funcionário com campos vazios**
 
-![Evidência 22](../Evidencias/EV-22.png)
-
-**Evidência 23 — Funcionário cadastrado**
-
-![Evidência 23](../Evidencias/EV-23.png)
-
-**Evidência 24 — Consulta do funcionário com campos vazios**
-
-![Evidência 24](../Evidencias/EV-24.png)
+![Evidência 01](../../Evidencias/EV-16.MP4)
 
 ---
 
 ## BUG-02 — API permite cadastro de funcionários com CPF duplicado
 
-**Execução de teste relacionada:** EV-API-05  
+**Execução de teste relacionada:** EV-API-06    
 **Cenário de teste relacionado:** CT-API-05  
 **Funcionalidade:** Cadastro de Funcionários  
 **Severidade:** Alta  
@@ -93,7 +85,7 @@ O registro criado também foi encontrado na consulta posterior.
 - API REST disponível e acessível.
 - Endpoint de cadastro identificado.
 - Métodos POST e GET suportados.
-- Funcionário previamente cadastrado com CPF `704.183.625-80`.
+- Funcionário previamente cadastrado com CPF `12121241231` -> Referente ao funcionário "Sea Teste".
 
 ### 2. Descrição
 
@@ -115,7 +107,7 @@ A API permite cadastrar um novo funcionário utilizando um CPF já existente no 
       "isActive": false,
       "name": "Gojo satoru honrado",
       "gender": "masculino",
-      "cpf": "704.183.625-80",
+      "cpf": "12121241231",
       "birthDay": "1999-12-04",
       "rg": "6293612",
       "role": "Cargo 4",
@@ -144,17 +136,9 @@ O registro duplicado foi encontrado na consulta posterior.
 
 ### 6. Evidências
 
-**Evidência 25 — Cadastro com CPF duplicado**
+**Evidência 02 — Cadastro com CPF duplicado**
 
-![Evidência 25](../Evidencias/EV-25.png)
-
-**Evidência 26 — Resposta da API após o cadastro**
-
-![Evidência 26](../Evidencias/EV-26.png)
-
-**Evidência 27 — Consulta do funcionário com CPF duplicado**
-
-![Evidência 27](../Evidencias/EV-27.png)
+![Evidência 02](../../Evidencias/EV-17.mp4)
 
 ---
 
@@ -224,17 +208,9 @@ O registro também foi encontrado na consulta posterior.
 
 ### 6. Evidências
 
-**Evidência 28 — Cadastro com dados inválidos**
+**Evidência 03 — Cadastro com dados inválidos**
 
-![Evidência 28](../Evidencias/EV-28.png)
-
-**Evidência 29 — Funcionário criado com sucesso**
-
-![Evidência 29](../Evidencias/EV-29.png)
-
-**Evidência 30 — Consulta do funcionário com dados inválidos**
-
-![Evidência 30](../Evidencias/EV-30.png)
+![Evidência 03](../../Evidencias/EV-19.mp4)
 
 ---
 
@@ -298,13 +274,10 @@ Dessa forma, a operação não apresentou o comportamento esperado de atualizaç
 
 ### 6. Evidências
 
-**Evidência 33 — Requisição PATCH de atualização parcial**
+**Evidência 04 — Requisição PATCH de atualização parcial**
 
-![Evidência 33](../Evidencias/EV-33.png)
+![Evidência 04](../../Evidencias/EV-21.mp4)
 
-**Evidência 34 — Resultado da atualização parcial**
-
-![Evidência 34](../Evidencias/EV-34.png)
 
 ### 7. Observações
 
@@ -315,11 +288,11 @@ Dessa forma, a operação não apresentou o comportamento esperado de atualizaç
 ## BUG-05 — API permite persistência de campos adicionais no cadastro de funcionários
 
 **Origem:** Teste exploratório de API  
-**Execução de teste relacionada:** EV-API-10  
+**Execução de teste relacionada:** EV-API-11    
 **Cenário de teste relacionado:** Não aplicável  
 **Funcionalidade:** Cadastro de Funcionários  
-**Severidade:** Média (provisória)  
-**Prioridade:** Média (provisória)  
+**Severidade:** Média   
+**Prioridade:** Média   
 **Ambiente:** Postman — API REST  
 **Situação:** Comportamento a esclarecer
 
@@ -347,22 +320,24 @@ Ainda é necessário confirmar se o contrato da API permite ou proíbe essas pro
 
 ```json
 {
-  "id": "fd54",
+  "id": "002",
   "state": {
     "employee": {
-      "tchola": "seila",
-      "Sea": "QA JUNIOR",
-      "funcionarios": 123,
-      "empregado": true,
-      "isActive": false,
-      "name": "Gilberto",
+      "isActive": true,
+      "esporte": "futebol",
+      "tênis": "nike",
+      "dedos": 5,
+      "verdadeiro": true,
+      "name": "Vanica Zogratis",
       "gender": "feminino",
-      "cpf": "00123456789",
-      "birthDay": "2000-05-10",
-      "rg": "1234567",
-      "role": "",
-      "usesEpi": false,
-      "caNumber": "00112233"
+      "cpf": "245.124.442-32",
+      "birthDay": "13/08/200",
+      "rg": "582073",
+      "role": "Cargo 2",
+      "usesEpi": true,
+      "activity": "Ativid 01",
+      "epi": "Luvas descartaveis",
+      "caNumber": "827444"
     }
   }
 }
@@ -387,11 +362,8 @@ O funcionário foi cadastrado e as propriedades adicionais enviadas foram armaze
 
 ### 6. Evidências
 
-**Evidência 38 — Cadastro de funcionário com campos adicionais**
+**Evidência 05 — Cadastro de funcionário com campos adicionais**
 
-![Evidência 38](../Evidencias/EV-38.png)
+![Evidência 05](../../Evidencias/EV-21.mp4)
 
-**Evidência 39 — Consulta do funcionário criado**
-
-![Evidência 39](../Evidencias/EV-39.png)
 

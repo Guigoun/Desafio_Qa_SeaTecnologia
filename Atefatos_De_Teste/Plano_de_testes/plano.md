@@ -49,7 +49,6 @@ Os testes buscarão verificar o atendimento aos requisitos e às regras de negó
 
 **Segurança e privacidade**
 - Verificações direcionadas de exposição de dados pessoais.
-- Verificação de controles de autorização, quando aplicáveis.
 - Identificação de possíveis inconsistências no acesso às informações.
 - Avaliação básica do tratamento de dados pessoais, considerando riscos relacionados à LGPD.
 
@@ -88,8 +87,8 @@ Os critérios abaixo representam os comportamentos esperados identificados duran
 - **CA08:** O cadastro deve exigir o preenchimento dos campos obrigatórios definidos.
 - **CA09:** O sistema deve aplicar as validações previstas para Nome, CPF, RG e Data de Nascimento.
 - **CA10:** O sistema deve impedir o cadastro de CPF duplicado, caso a unicidade seja uma regra de negócio confirmada.
-- **CA11:** O sistema deve permitir associar atividades e EPIs conforme as regras de negócio.
-- **CA12:** O sistema deve permitir adicionar múltiplos EPIs quando essa operação for autorizada.
+- **CA11:** O sistema deve permitir adicionar uma ou mais atividades e EPIs conforme as regras de negócio.
+- **CA12:** O sistema deve permitir adicionar uma ou mais EPIs quando essa operação for autorizada.
 - **CA13:** O sistema deve validar o número do CA conforme os requisitos definidos.
 - **CA14:** O sistema deve permitir anexar um ASO de forma opcional no formulário apresentado.
 - **CA15:** O sistema deve apresentar mensagens visíveis e compreensíveis quando houver falhas de validação.
