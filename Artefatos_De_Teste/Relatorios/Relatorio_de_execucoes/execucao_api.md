@@ -658,7 +658,7 @@ O documento original apresentava `200 Created` como status obtido. É necessári
 **Endpoint:** https://analista-teste.seatecnologia.com.br/employees  
 **Método HTTP:** POST/GET  
 **Ferramenta:** Postman  
-**Status:** Comportamento a esclarecer
+**Status:** Reprovado  
 
 ---
 

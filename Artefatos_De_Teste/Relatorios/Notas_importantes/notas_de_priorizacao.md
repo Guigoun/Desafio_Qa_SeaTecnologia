@@ -73,7 +73,7 @@ A tabela apresenta os resultados registrados nas execuções manuais e nas evid�
 | Exploratório | Interface | Reprovado | EV-IT-11 |
 | CT-API-01 | API | Aprovado | EV-API-01 |
 | CT-API-02 | API | Aprovado | EV-API-02 |
-| CT-API-02 | API | Aprovado | EV-API-03 |
+| Exploratório | API | Aprovado | EV-API-03 |
 | CT-API-03 | API | Aprovado | EV-API-04 |
 | CT-API-04 | API | Reprovado | EV-API-05 |
 | CT-API-05 | API | Reprovado | EV-API-06 |
@@ -81,12 +81,7 @@ A tabela apresenta os resultados registrados nas execuções manuais e nas evid�
 | CT-API-07 | API | Aprovado | EV-API-08 |
 | CT-API-08 | API | Reprovado | EV-API-09 |
 | CT-API-09 | API | Aprovado | EV-API-010 |
-| Exploratório | API | Aprovado | EV-API-011 |
-| CT-IT-01 | Automação | Aprovado | EV-AUT-01 |
-| CT-IT-02 | Automação | Aprovado | EV-AUT-02 |
-| CT-IT-01 | Automação | Reprovado | EV-AUT-03 |
-
-**Observação sobre a rastreabilidade:** a repetição do CT-API-02 e a associação do EV-AUT-03 ao CT-IT-01 devem ser conferidas nos relatórios de execução. Os identificadores foram preservados conforme os registros fornecidos.
+| Exploratório | API | Reprovado | EV-API-011 |  
 
 ### 4.1. Considerações sobre os resultados
 
