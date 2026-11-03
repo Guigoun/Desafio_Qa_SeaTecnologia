@@ -72,7 +72,7 @@ Durante os testes, foram observados códigos de status HTTP, estruturas JSON, ti
 
 O projeto contém artefatos que documentam as diferentes etapas do processo de testes.
 
-**Plano de Testes:** apresenta o escopo, os objetivos, a estratégia, os critérios de aceite, as prioridades e as condições consideradas para a execução dos testes. [plano.md]
+**Plano de Testes:** apresenta o escopo, os objetivos, a estratégia, os critérios de aceite, as prioridades e as condições consideradas para a execução dos testes. [plano de testes](plano.md)
 **Cenários de Teste:** descrevem os comportamentos a serem validados, contemplando situações positivas e negativas, pré-condições e resultados esperados. [cenários.md]
 
 **Relatórios de Execução:** registram os testes realizados, seus resultados e as observações identificadas. 
