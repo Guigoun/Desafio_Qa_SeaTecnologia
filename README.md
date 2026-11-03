@@ -72,15 +72,15 @@ Durante os testes, foram observados códigos de status HTTP, estruturas JSON, ti
 
 O projeto contém artefatos que documentam as diferentes etapas do processo de testes.
 
-**Plano de Testes:** apresenta o escopo, os objetivos, a estratégia, os critérios de aceite, as prioridades e as condições consideradas para a execução dos testes.
+**Plano de Testes:** apresenta o escopo, os objetivos, a estratégia, os critérios de aceite, as prioridades e as condições consideradas para a execução dos testes. [plano.md](Artefatos_De_Teste/Plano_de_testes/plano.md)
 
-**Cenários de Teste:** descrevem os comportamentos a serem validados, contemplando situações positivas e negativas, pré-condições e resultados esperados.
+**Cenários de Teste:** descrevem os comportamentos a serem validados, contemplando situações positivas e negativas, pré-condições e resultados esperados. [cenarios.md](Artefatos_De_Teste/Cenarios_de_testes/cenarios.md)
 
-**Relatórios de Execução:** registram os testes realizados, seus resultados e as observações identificadas.
+**Relatórios de Execução:** registram os testes realizados, seus resultados e as observações identificadas. [execucoes.md](Artefatos_De_Teste/Relatorios/execucoes.md)
 
-**Relatórios de Bugs:** documentam os possíveis defeitos encontrados, incluindo passos para reprodução, comportamento esperado, comportamento observado, severidade, prioridade e evidências.
+**Relatórios de Bugs:** documentam os possíveis defeitos encontrados, incluindo passos para reprodução, comportamento esperado, comportamento observado, severidade, prioridade e evidências. [bugs.md](Artefatos_De_Teste/Relatorios/bugs.md)
 
-**Evidências:** imagens e gravações utilizadas para demonstrar os resultados observados durante as execuções.
+**Evidências:** imagens e gravações utilizadas para demonstrar os resultados observados durante as execuções. [Evidencias](Artefatos_De_Teste/Evidencias/)
 
 ---
 
@@ -101,8 +101,8 @@ Para os testes de interface, foi utilizado o padrão **Page Object Model (POM)**
 | CT-IT-01 | Cadastro de funcionário com dados válidos |
 | CT-IT-02 | Cadastro com campos obrigatórios vazios |
 | CT-IT-03 | Cadastro com CPF duplicado |
-| CT-IT-04 | Cadastro com CPF inválido |
-| CT-IT-05 | Filtragem de funcionários ativos |
+| CT-IT-08 | Cadastro com CPF inválido |
+| CT-IT-10 | Filtragem de funcionários ativos |
 
 **Testes de API**
 
@@ -111,8 +111,8 @@ Para os testes de interface, foi utilizado o padrão **Page Object Model (POM)**
 | CT-API-01 | Listar funcionários — GET |
 | CT-API-02 | Buscar funcionário por ID — GET |
 | CT-API-03 | Cadastrar funcionário com dados válidos — POST |
-| CT-API-04 | Cadastrar funcionário com dados inválidos — POST |
-| CT-API-05 | Atualizar parcialmente um funcionário — PATCH |
+| CT-API-06 | Cadastrar funcionário com dados inválidos — POST |
+| CT-API-08 | Atualizar parcialmente um funcionário — PATCH |
 
 Os cenários automatizados foram desenvolvidos com base nos comportamentos e nas funcionalidades avaliadas durante o desafio.
 
