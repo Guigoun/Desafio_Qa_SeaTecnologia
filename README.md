@@ -70,6 +70,8 @@ Durante os testes, foram observados códigos de status HTTP, estruturas JSON, ti
 
 ## Planejamento e documentação
 
+## Planejamento e documentação
+
 O projeto contém artefatos que documentam as diferentes etapas do processo de testes.
 
 **Plano de Testes:** apresenta o escopo, os objetivos, a estratégia, os critérios de aceite, as prioridades e as condições consideradas para a execução dos testes. [plano.md](Artefatos_De_Teste/Plano_de_testes/plano.md)
@@ -81,6 +83,7 @@ O projeto contém artefatos que documentam as diferentes etapas do processo de t
 **Relatórios de Bugs:** documentam os possíveis defeitos encontrados, incluindo passos para reprodução, comportamento esperado, comportamento observado, severidade, prioridade e evidências. [bugs.md](Artefatos_De_Teste/Relatorios/bugs.md)
 
 **Evidências:** imagens e gravações utilizadas para demonstrar os resultados observados durante as execuções. [Evidencias](Artefatos_De_Teste/Evidencias/)
+
 ---
 
 ## Automação de testes com Playwright
