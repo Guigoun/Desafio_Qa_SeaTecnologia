@@ -72,15 +72,15 @@ Durante os testes, foram observados códigos de status HTTP, estruturas JSON, ti
 
 O projeto contém artefatos que documentam as diferentes etapas do processo de testes.
 
-**Plano de Testes:** apresenta o escopo, os objetivos, a estratégia, os critérios de aceite, as prioridades e as condições consideradas para a execução dos testes. [plano de testes](plano.md)
-**Cenários de Teste:** descrevem os comportamentos a serem validados, contemplando situações positivas e negativas, pré-condições e resultados esperados. [cenários.md]
+**Plano de Testes:** apresenta o escopo, os objetivos, a estratégia, os critérios de aceite, as prioridades e as condições consideradas para a execução dos testes. [plano.md](Plano_de_testes/plano.md)
 
-**Relatórios de Execução:** registram os testes realizados, seus resultados e as observações identificadas. 
+**Cenários de Teste:** descrevem os comportamentos a serem validados, contemplando situações positivas e negativas, pré-condições e resultados esperados. [cenarios.md](Cenarios_de_testes/cenarios.md)
 
+**Relatórios de Execução:** registram os testes realizados, seus resultados e as observações identificadas. [execucoes.md](Relatorios/execucoes.md)
 
-**Relatórios de Bugs:** documentam os possíveis defeitos encontrados, incluindo passos para reprodução, comportamento esperado, comportamento observado, severidade, prioridade e evidências.
+**Relatórios de Bugs:** documentam os possíveis defeitos encontrados, incluindo passos para reprodução, comportamento esperado, comportamento observado, severidade, prioridade e evidências. [bugs.md](Relatorios/bugs.md)
 
-**Evidências:** imagens e gravações utilizadas para demonstrar os resultados observados durante as execuções.
+**Evidências:** imagens e gravações utilizadas para demonstrar os resultados observados durante as execuções. [Evidencias](Evidencias/)
 
 ---
 
