@@ -72,15 +72,15 @@ Durante os testes, foram observados códigos de status HTTP, estruturas JSON, ti
 
 O projeto contém artefatos que documentam as diferentes etapas do processo de testes.
 
-**Plano de Testes:** apresenta o escopo, os objetivos, a estratégia, os critérios de aceite, as prioridades e as condições consideradas para a execução dos testes. [plano.md](Artefatos_De_Teste/Plano_de_testes/plano.md)
+**Plano de Testes:** apresenta o escopo, os objetivos, a estratégia, os critérios de aceite, as prioridades e as condições consideradas para a execução dos testes. [plano de testes](Artefatos_De_Teste/Plano_de_testes/plano.md)  
 
-**Cenários de Teste:** descrevem os comportamentos a serem validados, contemplando situações positivas e negativas, pré-condições e resultados esperados. [cenarios.md](Artefatos_De_Teste/Cenarios_de_testes/cenarios.md)
+**Cenários de Teste:** descrevem os comportamentos a serem validados, contemplando situações positivas e negativas, pré-condições e resultados esperados. [cenarios de testes](Artefatos_De_Teste/Cenarios_de_testes/cenarios.md)  
 
-**Relatórios de Execução:** registram os testes realizados, seus resultados e as observações identificadas. [execucoes.md](Artefatos_De_Teste/Relatorios/execucoes.md)
+**Relatórios de Execução:** registram os testes realizados, seus resultados e as observações identificadas. [relatório de execuções de interface](Artefatos_De_Teste/Relatorios/Relatorio_de_execucoes/execucao_interface.md)  [relatório de execuções de interface](Artefatos_De_Teste/Relatorios/Relatorio_de_execucoes/execucao_api.md)   
 
-**Relatórios de Bugs:** documentam os possíveis defeitos encontrados, incluindo passos para reprodução, comportamento esperado, comportamento observado, severidade, prioridade e evidências. [bugs.md](Artefatos_De_Teste/Relatorios/bugs.md)
+**Relatórios de Bugs:** documentam os possíveis defeitos encontrados, incluindo passos para reprodução, comportamento esperado, comportamento observado, severidade, prioridade e evidências. [bugs de interface](Artefatos_De_Teste/Relatorios/Relatorio_de_bugs/bugs_interface.md)  [bugs de api](Artefatos_De_Teste/Relatorios/Relatorio_de_bugs/bugs_api.md)  
 
-**Evidências:** imagens e gravações utilizadas para demonstrar os resultados observados durante as execuções. [Evidencias](Artefatos_De_Teste/Evidencias/)
+**Evidências:** imagens e gravações utilizadas para demonstrar os resultados observados durante as execuções. [Evidencias](Artefatos_De_Teste/Evidencias/)  
 
 ---
 
@@ -90,7 +90,9 @@ Como complemento aos testes manuais, foi desenvolvida uma automação utilizando
 
 A automação contempla testes de interface (UI) e testes de API REST, utilizando asserções para verificar os resultados esperados.
 
-Para os testes de interface, foi utilizado o padrão **Page Object Model (POM)**, com o objetivo de separar os elementos e as ações das páginas dos cenários de teste, facilitando a organização e a manutenção do código.
+Para os testes de interface, foi utilizado o padrão **Page Object Model (POM)**, com o objetivo de separar os elementos e as ações das páginas dos cenários de teste, facilitando a organização e a manutenção do código.  
+
+**Automação** -> [Playwright](Artefatos_De_Teste/Automação/Playwright/)  
 
 ### Cenários automatizados
 
@@ -234,7 +236,7 @@ A automação contou com participação significativa da IA, utilizada tanto na 
 
 As informações sobre a aplicação foram fornecidas durante o desenvolvimento, e os testes foram executados e avaliados a partir dos resultados observados.
 
-Para garantir transparência, o repositório contém um **Diário de IA**, no qual estão documentadas as principais formas de utilização da ferramenta ao longo dos dias do desafio.
+Para garantir transparência, o repositório contém um [Diário de IA](Artefatos_De_Teste\Diario_de_IA\diario.md), no qual estão documentadas as principais formas de utilização da ferramenta ao longo dos dias do desafio. 
 
 ---
 

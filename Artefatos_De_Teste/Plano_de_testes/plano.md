@@ -1,8 +1,7 @@
 # Plano de Testes — Sea Tecnologia
 
 **Projeto:** Sistema de Gestão de Funcionários  
-**Tipo de documento:** Plano de Testes  
-**Versão:** 1.0  
+**Tipo de documento:** Plano de Testes   
 **Responsável:** Analista de Testes (QA) - Guilherme Licati  
 **Status:** Planejamento inicial
 
@@ -64,7 +63,7 @@ Os testes buscarão verificar o atendimento aos requisitos e às regras de negó
 - Testes de segurança aprofundados, como pentest completo e auditoria de infraestrutura.
 - Validação direta da estrutura e integridade do banco de dados.
 - Testes de infraestrutura e disponibilidade em produção.
-- Testes extensivos de compatibilidade com dispositivos móveis.
+- Testes de compatibilidade com dispositivos móveis.
 
 **Justificativa:** as exclusões consideram o prazo do desafio, o acesso disponível ao ambiente e a priorização dos fluxos de negócio e riscos mais relevantes.
 
@@ -262,6 +261,7 @@ A documentação será organizada em repositório GitHub, permitindo a consulta 
 - Evidências de testes.
 - Scripts de automação.
 - Nota de priorização.
+- Dúvidas e premissas. 
 - Diário de uso de IA.
 
 ### 9.2. Registro de defeitos
@@ -306,7 +306,7 @@ Será mantido um diário de uma página descrevendo:
 - Quais sugestões foram aceitas, modificadas ou rejeitadas.
 - Como os resultados foram verificados pelo candidato.
 
-## 10. Riscos, Limitações e Premissas
+## 10. Riscos e Limitações  
 
 ### 10.1. Riscos e limitações
 
@@ -332,4 +332,3 @@ Ao final da execução, serão disponibilizados:
 
 ---
 
-**Observação:** este plano poderá ser atualizado conforme novas regras de negócio, limitações técnicas ou comportamentos relevantes forem identificados durante a exploração da aplicação.
