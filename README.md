@@ -76,9 +76,9 @@ O projeto contém artefatos que documentam as diferentes etapas do processo de t
 
 **Cenários de Teste:** descrevem os comportamentos a serem validados, contemplando situações positivas e negativas, pré-condições e resultados esperados. [cenarios de testes](Artefatos_De_Teste/Cenarios_de_testes/cenarios.md)  
 
-**Relatórios de Execução:** registram os testes realizados, seus resultados e as observações identificadas. [relatório de execuções de interface](Artefatos_De_Teste/Relatorios/Relatorio_de_execucoes/execucao_interface.md)  [relatório de execuções de interface](Artefatos_De_Teste/Relatorios/Relatorio_de_execucoes/execucao_api.md)   
+**Relatórios de Execução:** registram os testes realizados, seus resultados e as observações identificadas. [relatório de execuções de interface](Artefatos_De_Teste/Relatorios/Relatorio_de_execucoes/execucao_interface.md)   ---   [relatório de execuções de interface](Artefatos_De_Teste/Relatorios/Relatorio_de_execucoes/execucao_api.md)   
 
-**Relatórios de Bugs:** documentam os possíveis defeitos encontrados, incluindo passos para reprodução, comportamento esperado, comportamento observado, severidade, prioridade e evidências. [bugs de interface](Artefatos_De_Teste/Relatorios/Relatorio_de_bugs/bugs_interface.md)  [bugs de api](Artefatos_De_Teste/Relatorios/Relatorio_de_bugs/bugs_api.md)  
+**Relatórios de Bugs:** documentam os possíveis defeitos encontrados, incluindo passos para reprodução, comportamento esperado, comportamento observado, severidade, prioridade e evidências. [bugs de interface](Artefatos_De_Teste/Relatorios/Relatorio_de_bugs/bugs_interface.md)   ---   [bugs de api](Artefatos_De_Teste/Relatorios/Relatorio_de_bugs/bugs_api.md)  
 
 **Evidências:** imagens e gravações utilizadas para demonstrar os resultados observados durante as execuções. [Evidencias](Artefatos_De_Teste/Evidencias/)  
 
