@@ -422,4 +422,77 @@ O sistema aplicou o filtro e apresentou os funcionários com situação ativa, m
 
 [Evidência 09](../../Evidencias/EV-09.mp4)
 
+---
+
+## Evidência de Execução — EV-IT-10
+
+### Informações do Teste
+***Teste Exploratório**    
+**Cenário:** Suposto botão de ações do funcionário   
+**Data da execução:** 29/10/2026  
+**Ambiente:** Homologação  
+**Navegador:** Google Chrome  
+**Status:** Reprovado  
+
+### 1. Dados Utilizados
+
+- Funcionários previamente cadastrados no sistema, incluindo registros com situação ativa.
+
+### 2. Passos Executados
+
+1. Acessar a aplicação.
+2. Escolher um funcionário cadastrado visível na listagem.
+3. Clicar nos 3 pontinhos no canto direito do cadastro.
+
+### 3. Resultado Esperado
+
+O sistema deve abrir uma lista de ações do funcionário como: Editar, vizualizar, alterar situação, excluir
+
+### 4. Resultado Obtido
+
+Não houve nenhuma interação da interface após clicar no "botão".
+
+### 5. Evidências
+
+**Evidência 10 — Botão de Ações do funcionário**
+
+[Evidência 10](../../Evidencias/EV-24.mp4)
+
+---
+
+## Evidência de Execução — EV-IT-11
+
+### Informações do Teste
+***Teste Exploratório**    
+**Cenário:** Conclusão de etapa   
+**Data da execução:** 29/10/2026  
+**Ambiente:** Homologação  
+**Navegador:** Google Chrome  
+**Status:**   Reprovado
+
+### 1. Dados Utilizados
+
+- Aplicação disponível e acessível
+- Funcionários previamente cadastrados no sistema, incluindo registros com situação ativa.
+
+### 2. Passos Executados
+
+1. Acessar a aplicação.
+2. Clicar no botão "A etapa está concluida?".
+3. Clicar no botão "próximo passo".
+
+### 3. Resultado Esperado
+
+O sistema deve determinar a etapa como concluída, exibindo mensagem de conclusão e redirecionar o usuário para a próxima página da etapa
+
+### 4. Resultado Obtido
+
+O botão de situação alterou o texto para "Sim", o sistema exibiu a mensagem "CONCLUIDO" abaixo do ícone de etapas na parte superior da página,
+no entando não houve nenhuma ação após clicar no boão "próximo passo"
+
+### 5. Evidências
+
+**Evidência 11 — Filtragem e visualização de funcionários ativos**
+
+[Evidência 11](../../Evidencias/EV-25.mp4)
 

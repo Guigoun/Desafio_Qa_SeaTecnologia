@@ -1,0 +1,21 @@
+
+{
+  "compilerOptions": {
+    "target": "ES2022",
+    "module": "NodeNext",
+    "moduleResolution": "NodeNext",
+    "types": ["node", "@playwright/test"],
+    "strict": true,
+    "esModuleInterop": true,
+    "resolveJsonModule": true,
+    "skipLibCheck": true,
+    "noEmit": true
+  },
+  "include": [
+    "playwright.config.ts",
+    "pages/**/*.ts",
+    "tests/**/*.ts",
+    "services/**/*.ts",
+    "e2e/**/*.ts"
+  ]
+}

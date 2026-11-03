@@ -167,15 +167,22 @@ As versões efetivamente utilizadas serão registradas durante a execução.
 
 ### 6.2. Ferramentas
 
+
+### 6.2. Ferramentas
+
 | Finalidade | Ferramenta |
 |---|---|
-| Automação de interface web | Robot Framework |
-| Interação automatizada com navegador | Selenium |
-| Linguagem de apoio | Python |
-| Testes de API | Postman |
+| Automação de testes de interface web | Playwright |
+| Automação de testes de API REST | Playwright |
+| Linguagem de programação da automação | TypeScript |
+| Execução manual de testes de API | Postman |
+| Navegador para testes de interface | Google Chrome |
 | Controle de versão | Git |
 | Repositório de artefatos | GitHub |
 | Apoio à geração de massa de testes | ChatGPT |
+| Apoio à implementação e aprendizado da automação | ChatGPT |
+| Documentação dos testes | Markdown |
+
 
 ### 6.3. Massa de testes
 

@@ -174,3 +174,52 @@ Durante essa etapa, utilizei a IA para:
 - Auxiliar na implementação e revisão de validações automatizadas, considerando as limitações identificadas na aplicação.
 
 A IA foi utilizada como recurso de consulta e suporte técnico durante o desenvolvimento. A execução dos testes, a análise dos resultados e a avaliação das soluções propostas foram realizadas por mim, com base no comportamento observado na aplicação.
+
+# Dia 05 — Utilização de Inteligência Artificial
+
+## 1. Apoio na escrita técnica dos relatórios
+
+Utilizei a inteligência artificial para revisar e aprimorar a escrita técnica dos relatórios produzidos durante o desafio, buscando maior clareza, objetividade e padronização na documentação.
+
+O auxílio foi direcionado principalmente à organização das informações, à correção de termos técnicos e à melhoria da descrição dos resultados observados durante a execução dos testes.
+
+As informações e os comportamentos registrados foram obtidos a partir das minhas próprias execuções e análises, utilizando a IA como ferramenta de apoio à documentação.
+
+## 2. Desenvolvimento da automação de testes com Playwright
+
+Durante este dia, utilizei amplamente a inteligência artificial como apoio ao desenvolvimento da automação de testes de interface e API, utilizando **Playwright com TypeScript**.
+
+Forneci à IA as informações necessárias sobre a aplicação, os cenários de teste, os elementos da interface, os endpoints e os dados utilizados nas requisições, buscando construir uma automação alinhada aos testes realizados anteriormente.
+
+O auxílio da IA envolveu:
+
+- Orientação na configuração do ambiente e na organização da estrutura do projeto.
+- Apoio na implementação dos testes automatizados de interface e API.
+- Utilização do padrão Page Object Model (POM) para organizar os elementos e as ações das páginas.
+- Auxílio na identificação e correção de erros encontrados durante o desenvolvimento e a execução dos testes.
+- Implementação de validações utilizando asserções do Playwright.
+- Orientações sobre a organização dos arquivos e a utilização do `.gitignore` para o versionamento do projeto.
+
+Além da implementação, solicitei explicações sobre as diferentes partes do código, incluindo conceitos, métodos e estruturas utilizadas pelo Playwright e pelo TypeScript.
+
+Meu objetivo não foi apenas obter os códigos necessários para a automação, mas também compreender seu funcionamento, desenvolver maior familiaridade com a ferramenta e ampliar meus conhecimentos sobre testes automatizados.
+
+Os códigos foram executados e ajustados conforme os resultados obtidos, permitindo identificar comportamentos da aplicação e verificar as respostas dos cenários automatizados.
+
+## 3. Elaboração e revisão do README
+
+Também utilizei a inteligência artificial como apoio na elaboração do arquivo `README.md` do repositório do desafio.
+
+O objetivo foi apresentar de maneira organizada as informações do projeto, sua estrutura, as ferramentas utilizadas e os procedimentos necessários para compreender e executar os testes.
+
+Após a elaboração inicial, solicitei revisões e refinamentos no conteúdo, buscando melhorar a clareza das explicações, a organização das seções e a apresentação geral da documentação antes de disponibilizá-la no GitHub.
+
+## 4. Considerações sobre a utilização da IA
+
+Neste dia, a inteligência artificial teve participação significativa, principalmente no desenvolvimento da automação com Playwright, ferramenta com a qual busquei aprofundar meus conhecimentos durante o desafio.
+
+Procurei utilizar a IA não apenas para acelerar a implementação, mas também como recurso de aprendizado, solicitando explicações, esclarecendo dúvidas e acompanhando os resultados das execuções.
+
+A utilização da ferramenta foi acompanhada do fornecimento de informações sobre o sistema, da execução prática dos testes e da análise dos resultados obtidos.
+
+Dessa forma, a IA contribuiu para o desenvolvimento técnico, a melhoria da documentação e a consolidação dos conhecimentos adquiridos ao longo do desafio.
