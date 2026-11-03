@@ -12,7 +12,7 @@
 ## CT-IT-01 — Cadastro de funcionário com dados válidos
 
 **Funcionalidade:** Cadastro de Funcionários  
-**Critérios de aceite:** CA08, CA09, CA20
+**Critérios de aceite:** CA08, CA09    
 **Prioridade:** Alta  
 **Tipo:** Positivo  
 
@@ -101,7 +101,6 @@ Funcionalidade: Cadastro de funcionários
 - Formulário de cadastro disponível.
 - Dados obrigatórios preparados.
 - Atividade e EPIs disponíveis para seleção.
-- Ter um EPI préviamente adicionado
 
 ```gherkin
 Funcionalidade: Adicionar mais de uma atividade para um funcionário
@@ -329,8 +328,8 @@ Funcionalidade: Consulta de funcionários via API
 ## CT-API-02 — Consultar funcionário existente
 
 **Funcionalidade:** API REST  
-**Critérios de aceite:** CA19 
-**Prioridade:** Média  
+**Critérios de aceite:** CA19  
+**Prioridade:** Alta    
 **Tipo:** Positivo  
 
 **Pré-condições:**
@@ -357,7 +356,7 @@ Funcionalidade: Validação de consulta por id
 ## CT-API-03 — Cadastrar funcionário com dados válidos
 
 **Funcionalidade:** API REST  
-**Critérios de aceite:** CA10
+**Critérios de aceite:** CA09, CA10  
 **Prioridade:** Alta
 **Tipo:** Positivo  
 
@@ -380,8 +379,8 @@ Funcionalidade: Cadastrar funcionários
 
 ## CT-API-04 — Cadastrar funcionário com campos ausentes
 
-**Funcionalidade:** Cadastro de funcionários
-**Critério de aceite:** CA08, CA15
+**Funcionalidade:** Cadastro de funcionários  
+**Critério de aceite:** CA08, CA15  
 **Prioridade:** Alta  
 **Tipo:** Negativo  
 
@@ -405,10 +404,10 @@ Funcionalidade: Validação de campos JSON
 
 ## CT-API-05 — Cadastrar funcionário com CPF duplicado
 
-**Funcionalidade:** Cadastro de funcionários
-**Critério de aceite:** CA10, CA15
-**Prioridade:** Alta  
-**Tipo:** Negativo  
+**Funcionalidade:** Cadastro de funcionários  
+**Critério de aceite:** CA10, CA15  
+**Prioridade:** Alta   
+**Tipo:** Negativo   
 
 **Pré-condições:**
 - API REST disponível e acessível
@@ -431,8 +430,8 @@ Funcionalidade: Validação de unicidade do CPF
 
 ## CT-API-06 — Cadastrar funcionário com dados inválidos
 
-**Funcionalidade:** Cadastro de funcionários
-**Critério de aceite:** CA10, CA15
+**Funcionalidade:** Cadastro de funcionários  
+**Critério de aceite:** CA09, CA10, CA15  
 **Prioridade:** Alta  
 **Tipo:** Negativo  
 
@@ -456,10 +455,10 @@ Funcionalidade: Validação de campos obrigatórios
 
 ## CT-API-07 — Atualizar dados do funcionário
 
-**Funcionalidade:** Cadastro de funcionários
-**Critério de aceite:** CA05, CA06
-**Prioridade:** Alta  
-**Tipo:** Positivo  
+**Funcionalidade:** Cadastro de funcionários  
+**Critério de aceite:** CA05, CA06   
+**Prioridade:** Alta   
+**Tipo:** Positivo   
 
 **Pré-condições:**
 - API REST disponível e acessível
@@ -482,10 +481,10 @@ Funcionalidade: Validação de atualização de dados
 
 ## CT-API-08 — Atualizar um único dado do funcionário
 
-**Funcionalidade:** Cadastro de funcionários
-**Critério de aceite:** CA05, CA06
-**Prioridade:** Alta  
-**Tipo:** Positivo  
+**Funcionalidade:** Cadastro de funcionários  
+**Critério de aceite:** CA05, CA06  
+**Prioridade:** Alta   
+**Tipo:** Positivo   
 
 **Pré-condições:**
 - API REST disponível e acessível
@@ -508,10 +507,10 @@ Funcionalidade: Validação de atualização de campo
 
 ## CT-API-09 — Deletar usuário cadastrado
 
-**Funcionalidade:** Cadastro de funcionários
-**Critério de aceite:** CA07
-**Prioridade:** Média 
-**Tipo:** Positivo  
+**Funcionalidade:** Cadastro de funcionários  
+**Critério de aceite:** CA07  
+**Prioridade:** Média  
+**Tipo:** Positivo   
 
 **Pré-condições:**
 - API REST disponível e acessível

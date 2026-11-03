@@ -191,9 +191,9 @@ O sistema não adiciona uma nova atividade e redireciona o usuário para a pági
 
 ### 6. Evidências
 
-**Evidência 04 — Redirecionamento indevido ao adicionar outra atividade**
+**Evidência 05 — Redirecionamento indevido ao adicionar outra atividade**
 
-[Evidência 04](../../Evidencias/EV-04.mp4)
+[Evidência 05](../../Evidencias/EV-04.mp4)
 
 ---
 
@@ -235,9 +235,9 @@ Ao acionar o botão "Adicionar EPI", o sistema não inclui o equipamento informa
 
 ### 6. Evidências
 
-**Evidência 05 — Botão "Adicionar EPI" sem resposta funcional**
+**Evidência 06 — Botão "Adicionar EPI" sem resposta funcional**
 
-[Evidência 05](../../Evidencias/EV-05.mp4)
+[Evidência 06](../../Evidencias/EV-05.mp4)
 
 ---
 
@@ -286,8 +286,8 @@ O sistema permite a conclusão do cadastro mesmo com dados inválidos, sem apres
 
 ## BUG-IT-07 — Inconsistência na listagem de funcionários após alteração do filtro de situação
 
-**Execução de teste relacionada:** EV-12  
-**Cenário de teste relacionado:** CT-10  
+**Execução de teste relacionada:** EV-IT-09  
+**Cenário de teste relacionado:**  CT-IT-10     
 **Funcionalidade:** Listagem de Funcionários  
 **Severidade:** Alta  
 **Prioridade:** Alta  
@@ -375,8 +375,8 @@ O sistema conclui o cadastro do funcionário, entretanto o cargo "Cargo 01" não
 
 ## BUG-IT-09 — Inconsistência nos tipos de dados retornados pela API para funcionários cadastrados
 
-**Execução de teste relacionada:** Teste informal  
-**Cenário de teste relacionado:** Não aplicável  
+**Execução de teste relacionada:** EV-IT-03    
+**Cenário de teste relacionado:** CT-IT-03    
 **Funcionalidade:** Cadastro de Funcionários  
 **Severidade:** Alta  
 **Prioridade:** Alta  

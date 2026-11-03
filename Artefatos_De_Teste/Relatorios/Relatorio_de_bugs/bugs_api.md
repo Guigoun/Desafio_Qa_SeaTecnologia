@@ -144,7 +144,7 @@ O registro duplicado foi encontrado na consulta posterior.
 
 ## BUG-03 — API permite cadastro de funcionários com dados inválidos
 
-**Execução de teste relacionada:** EV-API-06  
+**Execução de teste relacionada:** EV-API-07   
 **Cenário de teste relacionado:** CT-API-06  
 **Funcionalidade:** Cadastro de Funcionários  
 **Severidade:** Alta  
@@ -216,12 +216,12 @@ O registro também foi encontrado na consulta posterior.
 
 ## BUG-04 — API substitui dados do funcionário durante atualização parcial por PATCH
 
-**Execução de teste relacionada:** EV-API-08  
-**Cenário de teste relacionado:** CT-API-08  
+**Execução de teste relacionada:** EV-API-09    
+**Cenário de teste relacionado:** CT-API-08      
 **Funcionalidade:** Atualização de Funcionários  
 **Severidade:** Alta  
 **Prioridade:** Alta  
-**Ambiente:** Postman — API REST
+**Ambiente:** Postman — API REST  
 
 ### 1. Pré-condições
 
@@ -364,6 +364,6 @@ O funcionário foi cadastrado e as propriedades adicionais enviadas foram armaze
 
 **Evidência 05 — Cadastro de funcionário com campos adicionais**
 
-![Evidência 05](../../Evidencias/EV-21.mp4)
+![Evidência 05](../../Evidencias/EV-23.mp4)
 
 

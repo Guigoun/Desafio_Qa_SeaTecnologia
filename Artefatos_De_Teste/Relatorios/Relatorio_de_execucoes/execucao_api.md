@@ -373,7 +373,7 @@ Na evidência, foi identificado um registro com `"id": "1"`. Ainda não há info
 
 **Evidência 06 — Cadastro com CPF duplicado**
 
-![Evidência 06](../../Evidencias/EV-17.png)
+![Evidência 06](../../Evidencias/EV-17.mp4)
 
 ---
 
@@ -727,4 +727,4 @@ O documento original apresentava `200 Created` como status obtido. É necessári
 
 **Evidência 11 — Cadastro de funcionário com campos adicionais**
 
-![Evidência 11](../Evidencias/EV-23.mp4)
+![Evidência 11](../../Evidencias/EV-23.mp4)

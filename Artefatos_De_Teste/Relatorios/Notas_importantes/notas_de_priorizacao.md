@@ -170,13 +170,13 @@ Os identificadores abaixo correspondem aos nomes utilizados na implementação d
 | CT-IT-01 — Cadastro válido | Interface | Alta | Automatiza o fluxo principal de cadastro, permitindo verificar sua execução em futuras rodadas de testes. |
 | CT-IT-02 — Campos obrigatórios vazios | Interface | Alta | Avalia o comportamento do formulário diante da ausência de informações obrigatórias. |
 | CT-IT-03 — CPF duplicado | Interface | Alta | Verifica uma regra importante de integridade dos dados e permite reproduzir o comportamento observado manualmente. |
-| CT-IT-04 — CPF inválido | Interface | Alta | Avalia a validação de dados incorretos e o comportamento da aplicação diante de entradas inválidas. |
-| CT-IT-05 — Filtragem de ativos | Interface | Média | Verifica uma funcionalidade recorrente da listagem e permite praticar a automação de elementos interativos. |
+| CT-IT-08 — Cadastro inválido | Interface | Alta | Avalia a validação de dados incorretos e o comportamento da aplicação diante de entradas inválidas. |
+| CT-IT-10 — Filtragem de ativos | Interface | Média | Verifica uma funcionalidade recorrente da listagem e permite praticar a automação de elementos interativos. |
 | CT-API-01 — GET geral | API | Alta | Verifica a disponibilidade da operação de consulta de funcionários. |
 | CT-API-02 — GET por ID | API | Alta | Avalia a consulta individual de registros por identificador. |
 | CT-API-03 — POST válido | API | Alta | Verifica o cadastro de funcionários com dados válidos e o retorno HTTP esperado. |
-| CT-API-04 — POST inválido | API | Alta | Avalia a rejeição de dados inválidos, contribuindo para a identificação de falhas de validação. |
-| CT-API-05 — PATCH | API | Alta | Verifica a atualização parcial de funcionários e a preservação dos registros existentes. |
+| CT-API-06 — POST inválido | API | Alta | Avalia a rejeição de dados inválidos, contribuindo para a identificação de falhas de validação. |
+| CT-API-08 — PATCH | API | Alta | Verifica a atualização parcial de funcionários e a preservação dos registros existentes. |
 
 A seleção permitiu contemplar operações positivas e negativas, além de diferentes funcionalidades da aplicação.
 
